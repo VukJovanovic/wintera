@@ -1,12 +1,13 @@
 .home-page-content {
   position: relative;
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 40px 60px 1fr max-content;
+  grid-template-rows: 40px 60px 1fr 3fr;
 
   @media only screen and (max-width: 980px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px minmax(100px, 1fr) max-content;
+    grid-template-rows: 60px 1fr max-content;
   }
 
   .header-contact-information {
@@ -26,6 +27,21 @@
     @media only screen and (max-width: 980px) {
       grid-row: 1 / 2;
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .call-to-action {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .banner {
+      grid-column: 1 / 3;
+    }
+
+    .social-links {
+      grid-column: 4 /5;
     }
   }
 }
