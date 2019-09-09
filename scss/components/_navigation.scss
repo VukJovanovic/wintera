@@ -1,0 +1,117 @@
+.header-navigation {
+  background-color: rgba($primary-color, 0.9);
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 1200px) {
+    padding: 0 50px;
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 0 20px;
+  }
+
+  .logo {
+    color: $secondary-color;
+    font-size: 2rem;
+  }
+
+  nav {
+    justify-self: right;
+    height: 100%;
+
+    @media only screen and (max-width: 980px) {
+      display: none;
+    }
+    .navigation-list {
+      display: flex;
+      height: 100%;
+      .navigation-item {
+        margin-right: 30px;
+        position: relative;
+        &:last-child {
+          margin-right: 0;
+        }
+        .navigation-link {
+          position: relative;
+          display: block;
+          color: white;
+          font-size: 1.6rem;
+          height: 100%;
+          padding-top: 20px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $secondary-color;
+            transition: width 0.4s;
+          }
+        }
+        .navigation-link:hover.navigation-link::after {
+          width: 100%;
+        }
+        .navigation-link:hover.subMenu-entry::after {
+          width: 0;
+        }
+        // submenu styles
+        ul {
+          position: absolute;
+          display: block;
+          opacity: 0;
+          visibility: hidden;
+          background-color: rgba($primary-color, 0.9);
+          border-top: 1px solid $secondary-color;
+          width: 140px;
+          padding: 0px 10px;
+          border-radius: 0px 0px 5px 5px;
+          transition: all 0.4s;
+          li {
+            margin-bottom: 10px;
+            a {
+              padding-top: 15px;
+              display: block;
+              color: white;
+              font-size: 1.6rem;
+              transition: color 0.4s;
+            }
+            a:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+      .subMenu-item:hover ul {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  // mobile navigation button
+  .mobile-navigation-button {
+    width: 30px;
+    align-self: center;
+    justify-self: right;
+    display: none;
+    z-index: 1000;
+
+    @media only screen and (max-width: 980px) {
+      display: block;
+    }
+
+    span {
+      width: 30px;
+      display: block;
+      height: 3px;
+      margin-bottom: 5px;
+      background-color: white;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
