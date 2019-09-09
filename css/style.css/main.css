@@ -27,7 +27,7 @@ ul {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 40px 60px minmax(100px, 1fr) max-content; }
+  grid-template-rows: 40px 60px 1fr max-content; }
   @media only screen and (max-width: 980px) {
     .home-page-content {
       grid-template-columns: 1fr 1fr;
@@ -65,7 +65,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 45, 64, 0.3); }
+  background-color: rgba(0, 45, 64, 0.1); }
 
 .header-contact-information {
   background-color: #002d40;
@@ -189,25 +189,31 @@ ul {
   opacity: 0;
   height: 100vh;
   z-index: 2000;
-  background-color: rgba(0, 45, 64, 0.9);
+  background-color: #002d40;
   display: none;
   flex-direction: column;
+  justify-content: center;
   overflow: hidden;
   padding: 20px 50px 0px 50px; }
   @media only screen and (max-width: 450px) {
     .sideBar-navigation {
       padding: 20px 20px 0px 20px; } }
   .sideBar-navigation-close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
     width: 30px;
     display: block;
     align-self: flex-end;
     opacity: 0; }
+    @media only screen and (max-width: 450px) {
+      .sideBar-navigation-close {
+        right: 20px; } }
     .sideBar-navigation-close img {
       width: 20px;
       height: 20px; }
   .sideBar-navigation ul {
-    opacity: 0;
-    margin-top: 50px; }
+    opacity: 0; }
     .sideBar-navigation ul li {
       margin-bottom: 20px; }
       .sideBar-navigation ul li a {
@@ -228,3 +234,14 @@ ul {
       .sideBar-navigation .social-links-link img {
         width: 30px;
         height: 30px; }
+
+.sideBar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  background-color: rgba(0, 45, 64, 0.7); }

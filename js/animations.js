@@ -4,10 +4,12 @@ const closeNav = document.getElementById('sideBar-close-button');
 const sideBar = document.querySelector('.sideBar-navigation');
 const sideBarNavList = document.getElementById('sideBar-navList');
 const socialLinks = document.querySelector('.social-links');
+const sideBarOverlay = document.querySelector('.sideBar-overlay');
 
 function showMenu(e) {
     e.preventDefault();
     TweenMax.to(openNav, .5, { display: 'none', opacity: 0 });
+    TweenMax.to(sideBarOverlay, .5, { display: 'block', opacity: 1, delay: .9 });
 
     if (screen.width <= 450) {
         TweenMax.to(sideBar, .5, { display: 'flex', opacity: 1, width: '30rem', delay: .5 });
@@ -25,6 +27,7 @@ function closeMenu(e) {
     TweenMax.to(sideBarNavList, .3, { opacity: 0, delay: .2 });
     TweenMax.to(closeNav, .3, { display: 'none', opacity: 0, delay: .4 });
     TweenMax.to(sideBar, .5, { display: 'none', opacity: 0, width: 0, delay: .6 });
+    TweenMax.to(sideBarOverlay, .5, { display: 'none', opacity: 0, delay: .6 });
     TweenMax.to(openNav, .5, { display: 'block', opacity: 1, delay: .8 });
 }
 
