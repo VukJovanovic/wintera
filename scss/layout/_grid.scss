@@ -84,3 +84,27 @@
     }
   }
 }
+
+.team-section {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .team-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    @media only screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media only screen and (max-width: 850px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2rem;
+      row-gap: 3rem;
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      row-gap: 3rem;
+    }
+  }
+}

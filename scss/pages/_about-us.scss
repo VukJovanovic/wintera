@@ -3,7 +3,9 @@
   height: 100%;
   background-color: $primary-color;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   padding: 100px 100px 200px 100px;
+
   @media only screen and (max-width: 1200px) {
     padding: 70px 150px 150px 150px;
   }
@@ -26,6 +28,10 @@
       width: 500px;
       height: 500px;
       border-radius: 5px;
+      @media only screen and (max-width: 1250px) {
+        width: 300px;
+        height: 400px;
+      }
     }
   }
 
@@ -63,7 +69,7 @@
     .aboutUs-plans {
       margin-top: 5rem;
       .aboutUs-plan {
-        border-top: 2px solid $secondary-color;
+        border-top: 1px solid $secondary-color;
         .plan-heading {
           padding-top: 1rem;
           display: flex;
@@ -86,6 +92,62 @@
           font-size: 1.2rem;
           line-height: 2rem;
         }
+      }
+    }
+  }
+}
+
+.team-section {
+  padding: 50px 100px 50px 100px;
+  @media only screen and (max-width: 670px) {
+    padding: 50px 50px 150px 50px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 50px 20px 150px 20px;
+  }
+
+  h2 {
+    justify-self: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  .team-collection {
+    margin-top: 7rem;
+    justify-items: center;
+    .team-user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $primary-color;
+        font-weight: 300;
+        font-size: 1.2rem;
       }
     }
   }
