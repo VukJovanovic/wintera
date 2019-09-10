@@ -37,7 +37,7 @@ ul {
     display: grid;
     grid-column: 1 / -1;
     grid-row: 1 / 2; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       .home-page-content .header-contact-information {
         display: none; } }
   .home-page-content .header-navigation {
@@ -45,15 +45,17 @@ ul {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     grid-template-columns: 1fr 2fr; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       .home-page-content .header-navigation {
         grid-row: 1 / 2;
-        grid-template-columns: 1fr 1fr; } }
+        grid-template-columns: 1fr 2fr; } }
   .home-page-content .call-to-action {
     display: grid;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    grid-template-columns: 1fr 1fr 2fr max-content;
+    grid-template-rows: max-content;
+    align-content: flex-end; }
     @media only screen and (max-width: 1024px) {
       .home-page-content .call-to-action {
         grid-template-columns: minmax(50px, 1fr) max-content minmax(50px, 1fr);
@@ -88,7 +90,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 45, 64, 0.1); }
+  background-color: rgba(0, 45, 64, 0.3); }
 
 .header-contact-information {
   background-color: #002d40;
@@ -250,17 +252,27 @@ ul {
         font-weight: 300;
         text-align: center;
         padding: 10px 0; }
+      .sideBar-navigation ul li .sideBar-dropdown-links {
+        border-left: 1px solid #f9fd50;
+        background-color: rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+        display: none;
+        opacity: 0;
+        transform: tranlsateY(-40px); }
   .sideBar-navigation .social-links {
     opacity: 0;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    border-top: 1px solid #f9fd50;
+    padding-top: 20px;
     justify-self: flex-end; }
     .sideBar-navigation .social-links-link {
       margin-right: 15px; }
-      .sideBar-navigation .social-links-link img {
-        width: 30px;
-        height: 30px; }
+      .sideBar-navigation .social-links-link i {
+        font-size: 4rem;
+        color: #f9fd50; }
 
 .sideBar-overlay {
   position: absolute;
@@ -274,9 +286,9 @@ ul {
   background-color: rgba(0, 45, 64, 0.7); }
 
 .call-to-action .banner {
-  background-color: rgba(0, 45, 64, 0.6);
+  background-color: rgba(0, 45, 64, 0.8);
   border-radius: 0px 5px 0px 0px;
-  padding: 30px 30px 30px 100px;
+  padding: 50px 50px 30px 100px;
   display: flex;
   flex-direction: column; }
   @media only screen and (max-width: 1200px) {
@@ -305,7 +317,7 @@ ul {
     font-weight: 400;
     font-size: 2.5rem;
     position: relative;
-    padding-bottom: 10px; }
+    padding-bottom: 15px; }
     @media only screen and (max-width: 1024px) {
       .call-to-action .banner h1 {
         text-align: center; } }
@@ -326,7 +338,7 @@ ul {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 3rem;
-    margin-top: 20px; }
+    margin-top: 40px; }
   .call-to-action .banner-button {
     display: block;
     color: #002d40;
@@ -334,10 +346,11 @@ ul {
     padding: 15px 0px;
     width: 150px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1.5rem;
     background-color: #f9fd50;
-    transition: background-color 0.4s; }
+    transition: background-color 0.4s;
+    margin-bottom: 50px; }
     @media only screen and (max-width: 1024px) {
       .call-to-action .banner-button {
         align-self: center; } }
@@ -346,24 +359,21 @@ ul {
 
 .call-to-action .social-links {
   display: flex;
-  background-color: rgba(0, 45, 64, 0.6);
+  background-color: #002d40;
   align-self: flex-end;
   flex-direction: column;
   align-items: center;
   height: 80px;
   padding: 10px;
   border-radius: 5px 0px 0px 0px; }
-  .call-to-action .social-links h2 {
-    color: white;
-    font-weight: 300;
-    font-size: 1.5rem; }
-  .call-to-action .social-links .links {
-    display: flex;
-    margin-top: 15px; }
   .call-to-action .social-links .link {
-    justify-self: right;
-    display: block;
-    margin-right: 20px; }
-    .call-to-action .social-links .link img {
-      width: 25px;
-      height: 25px; }
+    margin-bottom: 10px;
+    display: block; }
+    .call-to-action .social-links .link:last-child {
+      margin-bottom: 0; }
+    .call-to-action .social-links .link i {
+      font-size: 2.5rem;
+      color: #f9fd50;
+      transition: color 0.4s; }
+      .call-to-action .social-links .link i:hover {
+        color: #ffd700; }

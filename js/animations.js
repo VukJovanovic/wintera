@@ -33,3 +33,26 @@ function closeMenu(e) {
 
 openNav.addEventListener('click', showMenu);
 closeNav.addEventListener('click', closeMenu);
+
+// sidebar dropdown
+
+const sideBarDropdown = document.getElementById('sideBardropdown');
+const SideBarDropdownLinks = document.querySelector('.sideBar-dropdown-links');
+
+
+
+function sideBarDropdownOpen(e) {
+    e.preventDefault();
+
+    let count = 0;
+    if (count === 0) {
+        TweenMax.to(SideBarDropdownLinks, .6, { display: 'block', opacity: 1, y: 0 });
+        count++;
+    } else {
+        TweenMax.to(SideBarDropdownLinks, .6, { display: 'none', opacity: 0 });
+        count = 0;
+    }
+
+}
+
+sideBarDropdown.addEventListener('click', sideBarDropdownOpen);
