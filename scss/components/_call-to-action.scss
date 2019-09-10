@@ -21,8 +21,7 @@
     }
     @media only screen and (max-width: 480px) {
       width: 350px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 20px;
     }
     @media only screen and (max-width: 380px) {
       width: 320px;
@@ -60,6 +59,9 @@
       font-size: 1.8rem;
       line-height: 3rem;
       margin-top: 40px;
+      @media only screen and (max-width: 1024px) {
+        margin-top: 20px;
+      }
     }
 
     &-button {
@@ -78,6 +80,7 @@
       @media only screen and (max-width: 1024px) {
         align-self: center;
         margin-bottom: 0;
+        margin-top: 20px;
       }
 
       &:hover {

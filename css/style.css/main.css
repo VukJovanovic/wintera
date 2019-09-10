@@ -304,8 +304,7 @@ ul {
   @media only screen and (max-width: 480px) {
     .call-to-action .banner {
       width: 350px;
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding: 20px; } }
   @media only screen and (max-width: 380px) {
     .call-to-action .banner {
       width: 320px; } }
@@ -336,6 +335,9 @@ ul {
     font-size: 1.8rem;
     line-height: 3rem;
     margin-top: 40px; }
+    @media only screen and (max-width: 1024px) {
+      .call-to-action .banner-text {
+        margin-top: 20px; } }
   .call-to-action .banner-button {
     display: block;
     color: #002d40;
@@ -351,7 +353,8 @@ ul {
     @media only screen and (max-width: 1024px) {
       .call-to-action .banner-button {
         align-self: center;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        margin-top: 20px; } }
     .call-to-action .banner-button:hover {
       background-color: #ffd700; }
 
