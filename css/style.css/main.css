@@ -54,10 +54,22 @@ ul {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
+    @media only screen and (max-width: 1024px) {
+      .home-page-content .call-to-action {
+        grid-template-columns: minmax(50px, 1fr) max-content minmax(50px, 1fr); } }
+    @media only screen and (max-width: 480px) {
+      .home-page-content .call-to-action {
+        grid-template-columns: minmax(20px, 1fr) max-content minmax(20px, 1fr); } }
     .home-page-content .call-to-action .banner {
       grid-column: 1 / 3; }
+      @media only screen and (max-width: 1024px) {
+        .home-page-content .call-to-action .banner {
+          grid-column: 2 / 3; } }
     .home-page-content .call-to-action .social-links {
-      grid-column: 4 /5; }
+      grid-column: 4 / 5; }
+      @media only screen and (max-width: 1024px) {
+        .home-page-content .call-to-action .social-links {
+          display: none; } }
 
 .background-image {
   position: absolute;
@@ -261,9 +273,96 @@ ul {
   background-color: rgba(0, 45, 64, 0.7); }
 
 .call-to-action .banner {
-  background-color: rgba(0, 45, 64, 0.4);
+  background-color: rgba(0, 45, 64, 0.6);
   border-radius: 0px 5px 0px 0px;
-  padding-left: 100px; }
+  padding: 30px 30px 30px 100px;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1200px) {
+    .call-to-action .banner {
+      padding-left: 50px; } }
+  @media only screen and (max-width: 1024px) {
+    .call-to-action .banner {
+      width: 500px;
+      border-radius: 5px; } }
+  @media only screen and (max-width: 600px) {
+    .call-to-action .banner {
+      width: 450px; } }
+  @media only screen and (max-width: 530px) {
+    .call-to-action .banner {
+      width: 400px; } }
+  @media only screen and (max-width: 480px) {
+    .call-to-action .banner {
+      width: 350px;
+      padding-left: 20px; } }
+  @media only screen and (max-width: 380px) {
+    .call-to-action .banner {
+      width: 320px;
+      padding-left: 20px; } }
   .call-to-action .banner h1 {
     color: white;
-    font-weight: 300; }
+    font-weight: 400;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 10px; }
+    @media only screen and (max-width: 1024px) {
+      .call-to-action .banner h1 {
+        text-align: center; } }
+    .call-to-action .banner h1::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 1px;
+      background-color: #f9fd50; }
+      @media only screen and (max-width: 1024px) {
+        .call-to-action .banner h1::after {
+          left: 50%;
+          transform: translateX(-50%); } }
+  .call-to-action .banner-text {
+    color: white;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-top: 20px; }
+  .call-to-action .banner-button {
+    display: block;
+    color: #002d40;
+    text-align: center;
+    padding: 15px 0px;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    background-color: #f9fd50;
+    transition: background-color 0.4s; }
+    @media only screen and (max-width: 1024px) {
+      .call-to-action .banner-button {
+        align-self: center; } }
+    .call-to-action .banner-button:hover {
+      background-color: #ffd700; }
+
+.call-to-action .social-links {
+  display: flex;
+  background-color: rgba(0, 45, 64, 0.6);
+  align-self: flex-end;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px 0px 0px 0px; }
+  .call-to-action .social-links h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem; }
+  .call-to-action .social-links .links {
+    display: flex;
+    margin-top: 15px; }
+  .call-to-action .social-links .link {
+    justify-self: right;
+    display: block;
+    margin-right: 20px; }
+    .call-to-action .social-links .link img {
+      width: 25px;
+      height: 25px; }
