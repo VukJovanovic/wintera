@@ -64,3 +64,23 @@
     }
   }
 }
+
+.aboutUs-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .aboutUs-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
+  }
+}

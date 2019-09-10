@@ -9,7 +9,8 @@
 html {
   width: 100%;
   height: 100%;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media only screen and (max-width: 1158px) {
     html {
       font-size: 55%; } }
@@ -73,6 +74,22 @@ ul {
       @media only screen and (max-width: 1024px) {
         .home-page-content .call-to-action .social-links {
           display: none; } }
+
+.aboutUs-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 1024px) {
+    .aboutUs-content {
+      grid-template-columns: 1fr;
+      justify-content: center; } }
+  .aboutUs-content .aboutUs-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem; }
+    @media only screen and (max-width: 600px) {
+      .aboutUs-content .aboutUs-plans {
+        grid-template-columns: 1fr;
+        row-gap: 3rem; } }
 
 .background-image {
   position: absolute;
@@ -237,9 +254,9 @@ ul {
     @media only screen and (max-width: 450px) {
       .sideBar-navigation-close {
         right: 20px; } }
-    .sideBar-navigation-close img {
-      width: 20px;
-      height: 20px; }
+    .sideBar-navigation-close i {
+      font-size: 2.5rem;
+      color: white; }
   .sideBar-navigation ul {
     opacity: 0; }
     .sideBar-navigation ul li {
@@ -378,3 +395,75 @@ ul {
       transition: color 0.4s; }
       .call-to-action .social-links .link i:hover {
         color: #ffd700; }
+
+.aboutUs-content {
+  width: 100vw;
+  height: 100%;
+  background-color: #002d40;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding: 100px 100px 200px 100px; }
+  @media only screen and (max-width: 1200px) {
+    .aboutUs-content {
+      padding: 70px 150px 150px 150px; } }
+  @media only screen and (max-width: 850px) {
+    .aboutUs-content {
+      padding: 70px 120px 150px 120px; } }
+  @media only screen and (max-width: 600px) {
+    .aboutUs-content {
+      padding: 70px 90px 150px 90px; } }
+  @media only screen and (max-width: 480px) {
+    .aboutUs-content {
+      padding: 70px 40px 150px 40px; } }
+  .aboutUs-content .aboutUs-photo {
+    margin-right: 70px; }
+    @media only screen and (max-width: 1024px) {
+      .aboutUs-content .aboutUs-photo {
+        display: none; } }
+    .aboutUs-content .aboutUs-photo img {
+      width: 500px;
+      height: 500px;
+      border-radius: 5px; }
+  .aboutUs-content .aboutUs-description .aboutUs-heading {
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+    .aboutUs-content .aboutUs-description .aboutUs-heading::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background-color: #f9fd50; }
+  .aboutUs-content .aboutUs-description .aboutUs-text {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2rem; }
+    .aboutUs-content .aboutUs-description .aboutUs-text:last-child {
+      margin-bottom: 0; }
+  .aboutUs-content .aboutUs-description .aboutUs-plans {
+    margin-top: 5rem; }
+    .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan {
+      border-top: 2px solid #f9fd50; }
+      .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem; }
+        .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading i {
+          color: #f9fd50;
+          margin-right: 10px;
+          justify-self: left; }
+        .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading h2 {
+          color: white;
+          font-weight: 300; }
+      .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-text {
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 2rem; }
