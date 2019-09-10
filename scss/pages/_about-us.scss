@@ -56,7 +56,7 @@
     }
     .aboutUs-text {
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 2rem;
       line-height: 2rem;
 
@@ -89,7 +89,7 @@
         .plan-text {
           color: white;
           font-weight: 300;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           line-height: 2rem;
         }
       }
@@ -133,10 +133,14 @@
       flex-direction: column;
       align-items: center;
       img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         border-radius: 100%;
         margin-bottom: 2rem;
+        @media only screen and (max-width: 480px) {
+          width: 80px;
+          height: 80px;
+        }
       }
       h3 {
         font-weight: 300;
