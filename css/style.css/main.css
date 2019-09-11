@@ -114,15 +114,15 @@ ul {
         grid-gap: 1rem;
         row-gap: 3rem; } }
 
-footer {
+footer .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
   @media only screen and (max-width: 850px) {
-    footer {
+    footer .footer-content {
       grid-template-columns: 1fr 1fr;
       row-gap: 2rem; } }
   @media only screen and (max-width: 600px) {
-    footer {
+    footer .footer-content {
       grid-template-columns: 1fr; } }
 
 .background-image {
@@ -176,16 +176,25 @@ footer {
   @media only screen and (max-width: 1200px) {
     .header-navigation {
       padding: 0 50px; } }
+  @media only screen and (max-width: 1024px) {
+    .header-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex; } }
   @media only screen and (max-width: 450px) {
     .header-navigation {
-      padding: 0 20px; } }
+      padding: 10px 20px; } }
   .header-navigation .logo img {
     width: 150px;
     height: 40px; }
   .header-navigation nav {
     justify-self: right;
     height: 100%; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       .header-navigation nav {
         display: none; } }
     .header-navigation nav .navigation-list {
@@ -242,13 +251,16 @@ footer {
       .header-navigation nav .navigation-list .subMenu-item:hover ul {
         opacity: 1;
         visibility: visible; }
+  .header-navigation .sticky {
+    position: fixed;
+    top: 0; }
   .header-navigation .mobile-navigation-button {
     width: 30px;
     align-self: center;
     justify-self: right;
     display: none;
     z-index: 1000; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       .header-navigation .mobile-navigation-button {
         display: block; } }
     .header-navigation .mobile-navigation-button span {
@@ -436,7 +448,8 @@ footer {
   background-color: #002d40;
   clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
-  padding: 100px 100px 200px 100px; }
+  padding: 100px 100px 200px 100px;
+  z-index: 2; }
   @media only screen and (max-width: 1200px) {
     .aboutUs-content {
       padding: 70px 50px 150px 50px; } }
@@ -460,6 +473,7 @@ footer {
       width: 55%;
       border: 2px solid white;
       height: 30vh;
+      border-radius: 5px;
       box-shadow: 2rem 0.3rem 4rem rgba(0, 45, 64, 0.25);
       background-image: url("../../img/background.jpg");
       background-position: center;
@@ -469,9 +483,6 @@ footer {
           margin-top: 6rem;
           width: 40vw;
           height: 30vw; } }
-      @media only screen and (max-width: 600px) {
-        .aboutUs-content .aboutUs-photo div {
-          margin-top: 4rem; } }
     .aboutUs-content .aboutUs-photo-2 {
       position: absolute;
       top: 15vh;
@@ -540,10 +551,10 @@ footer {
   padding: 50px 100px 50px 100px; }
   @media only screen and (max-width: 670px) {
     .team-section {
-      padding: 50px 50px 150px 50px; } }
+      padding: 50px 50px 60px 50px; } }
   @media only screen and (max-width: 480px) {
     .team-section {
-      padding: 50px 20px 150px 20px; } }
+      padding: 50px 20px 60px 20px; } }
   .team-section h2 {
     justify-self: center;
     font-weight: 300;
@@ -626,13 +637,25 @@ footer {
     footer .footer-social .footer-socialLinks a {
       color: white;
       font-size: 3.5rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      transition: color 0.4s; }
       footer .footer-social .footer-socialLinks a:last-child {
         margin-right: 0; }
+      footer .footer-social .footer-socialLinks a:hover {
+        color: #f9fd50; }
   footer .footer-contact p {
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
     color: white;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 600px) {
+      footer .footer-contact p {
+        text-align: center; } }
     footer .footer-contact p i {
       margin-right: 5px; }
+  footer .copyrights {
+    display: flex;
+    justify-content: center; }
+    footer .copyrights p {
+      color: white;
+      margin-right: 1rem; }

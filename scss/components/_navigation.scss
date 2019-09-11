@@ -6,8 +6,17 @@
   @media only screen and (max-width: 1200px) {
     padding: 0 50px;
   }
+  @media only screen and (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+  }
   @media only screen and (max-width: 450px) {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 
   .logo {
@@ -21,7 +30,7 @@
     justify-self: right;
     height: 100%;
 
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       display: none;
     }
     .navigation-list {
@@ -94,6 +103,11 @@
     }
   }
 
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
   // mobile navigation button
   .mobile-navigation-button {
     width: 30px;
@@ -102,7 +116,7 @@
     display: none;
     z-index: 1000;
 
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1024px) {
       display: block;
     }
 

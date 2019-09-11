@@ -114,13 +114,15 @@
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  @media only screen and (max-width: 850px) {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-  }
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media only screen and (max-width: 850px) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
