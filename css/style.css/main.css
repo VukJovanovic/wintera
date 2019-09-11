@@ -172,7 +172,8 @@ footer .footer-content {
   background-color: rgba(0, 45, 64, 0.9);
   padding: 0 100px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  z-index: 2500; }
   @media only screen and (max-width: 1200px) {
     .header-navigation {
       padding: 0 50px; } }
@@ -376,7 +377,8 @@ footer .footer-content {
     font-weight: 400;
     font-size: 2.5rem;
     position: relative;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    z-index: 2; }
     @media only screen and (max-width: 1024px) {
       .call-to-action .banner h1 {
         text-align: center; } }
