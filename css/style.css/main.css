@@ -97,7 +97,7 @@ ul {
   .team-section .team-collection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 3rem; }
+    grid-gap: 2rem; }
     @media only screen and (max-width: 1024px) {
       .team-section .team-collection {
         grid-template-columns: 1fr 1fr 1fr 1fr; } }
@@ -111,6 +111,17 @@ ul {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
         row-gap: 3rem; } }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  @media only screen and (max-width: 850px) {
+    footer {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem; } }
+  @media only screen and (max-width: 600px) {
+    footer {
+      grid-template-columns: 1fr; } }
 
 .background-image {
   position: absolute;
@@ -146,9 +157,9 @@ ul {
       margin-right: 20px; }
       .header-contact-information .contact-information .information-text:last-child {
         margin-right: 0; }
-      .header-contact-information .contact-information .information-text img {
-        width: 15px;
-        height: 15px;
+      .header-contact-information .contact-information .information-text i {
+        color: white;
+        font-size: 1.2rem;
         margin-right: 10px; }
       .header-contact-information .contact-information .information-text p {
         color: white;
@@ -542,3 +553,53 @@ ul {
         color: #002d40;
         font-weight: 300;
         font-size: 1.2rem; }
+
+footer {
+  background-color: #002d40;
+  padding: 50px 100px 50px 100px; }
+  @media only screen and (max-width: 1200px) {
+    footer {
+      padding: 50px 50px 50px 50px; } }
+  footer .company-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .company-details .footer-logo img {
+      width: 150px;
+      height: 60px; }
+    footer .company-details p {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 2rem; }
+  footer .footer-location {
+    text-align: center; }
+    footer .footer-location p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: white;
+      margin-bottom: 1rem; }
+      footer .footer-location p:last-child {
+        font-size: 1.3rem; }
+        footer .footer-location p:last-child i {
+          margin-right: 5px; }
+  footer .footer-social p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem; }
+  footer .footer-social .footer-socialLinks {
+    display: flex;
+    justify-content: center; }
+    footer .footer-social .footer-socialLinks a {
+      color: white;
+      font-size: 3.5rem;
+      margin-right: 2rem; }
+      footer .footer-social .footer-socialLinks a:last-child {
+        margin-right: 0; }
+  footer .footer-contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem; }
+    footer .footer-contact p i {
+      margin-right: 5px; }
