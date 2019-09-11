@@ -7,30 +7,68 @@
   padding: 100px 100px 200px 100px;
 
   @media only screen and (max-width: 1200px) {
-    padding: 70px 150px 150px 150px;
+    padding: 70px 50px 150px 50px;
   }
   @media only screen and (max-width: 850px) {
-    padding: 70px 120px 150px 120px;
+    padding: 70px 50px 150px 50px;
   }
   @media only screen and (max-width: 600px) {
-    padding: 70px 90px 150px 90px;
+    padding: 70px 50px 150px 50px;
   }
   @media only screen and (max-width: 480px) {
-    padding: 70px 40px 150px 40px;
+    padding: 70px 30px 150px 30px;
   }
 
   .aboutUs-photo {
+    padding-top: 20px;
     margin-right: 70px;
+    position: relative;
     @media only screen and (max-width: 1024px) {
-      display: none;
+      margin-right: 0;
+    }
+    div {
+      width: 55%;
+      height: 30vh;
+      background-image: url('../../img/background.jpg');
+      background-position: center;
+      background-size: cover;
+      @media only screen and (max-width: 1024px) {
+        margin-top: 6rem;
+        width: 40vw;
+        height: 30vw;
+      }
+      @media only screen and (max-width: 600px) {
+        margin-top: 4rem;
+      }
+    }
+    &-1 {
+    }
+    &-2 {
+      position: absolute;
+      top: 15vh;
+      right: 2rem;
+      @media only screen and (max-width: 1024px) {
+        top: 2rem;
+        right: 0;
+      }
+    }
+    &-3 {
+      position: absolute;
+      top: 20 vw;
+      left: 40%;
+      transform: translateX(-40%);
+      @media only screen and (max-width: 1024px) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media only screen and (max-width: 1024px) {
     }
     img {
-      width: 500px;
-      height: 500px;
-      border-radius: 5px;
       @media only screen and (max-width: 1250px) {
-        width: 300px;
-        height: 400px;
+        // width: 300px;
+        // height: 400px;
       }
     }
   }

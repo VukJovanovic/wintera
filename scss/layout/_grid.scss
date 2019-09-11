@@ -71,6 +71,10 @@
   @media only screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
     justify-content: center;
+
+    .aboutUs-photo {
+      grid-row: 2 / 3;
+    }
   }
 
   .aboutUs-plans {
