@@ -1,10 +1,10 @@
 footer {
   background-color: $primary-color;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-  padding: 150px 100px 50px 100px;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  padding: 80px 100px 50px 100px;
   @media only screen and (max-width: 1200px) {
-    padding: 150px 50px 50px 50px;
+    padding: 80px 50px 50px 50px;
   }
 
   .company-details {
