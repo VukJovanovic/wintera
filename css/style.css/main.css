@@ -273,7 +273,7 @@ footer .footer-content {
         margin-bottom: 0; }
 
 .sideBar-navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 0;
@@ -335,7 +335,7 @@ footer .footer-content {
         color: #f9fd50; }
 
 .sideBar-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
