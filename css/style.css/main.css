@@ -55,9 +55,6 @@ ul {
           grid-column: 2 / 3; } }
     .home-page-content .call-to-action .social-links {
       grid-column: 4 / 5; }
-      @media only screen and (max-width: 1024px) {
-        .home-page-content .call-to-action .social-links {
-          display: none; } }
 
 .home-page-content .header-contact-information,
 .category-page-content .header-contact-information {
