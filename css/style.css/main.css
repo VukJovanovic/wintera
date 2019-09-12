@@ -324,7 +324,8 @@ footer .footer-content {
         padding: 10px 0; }
     .sideBar-navigation ul .sideBar-dropdown-tabs {
       overflow: hidden;
-      padding: 10px 0; }
+      padding: 10px 0;
+      margin-bottom: 0; }
       .sideBar-navigation ul .sideBar-dropdown-tabs .sideBar-dropdown {
         width: 100%;
         overflow: hidden;
@@ -340,12 +341,14 @@ footer .footer-content {
         .sideBar-navigation ul .sideBar-dropdown-tabs .sideBar-dropdown-content {
           max-height: 0;
           overflow: hidden;
-          transition: max-height 0.6s;
-          -webkit-transition: max-height 0.6s;
+          margin-top: 15px;
+          padding-top: 10px;
+          transition: max-height 0.7s;
+          -webkit-transition: max-height 0.7s;
+          padding: 0;
           border-left: 1px solid #f9fd50; }
         .sideBar-navigation ul .sideBar-dropdown-tabs .sideBar-dropdown input:checked ~ .sideBar-dropdown-content {
-          max-height: 100vh;
-          padding-top: 10px; }
+          max-height: 100vh; }
   .sideBar-navigation .social-links {
     opacity: 0;
     display: flex;
