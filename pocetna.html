@@ -11,13 +11,29 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css/main.css" />
   </head>
   <body>
-    <div class="background-image"></div>
-    <div class="background-image-overlay"></div>
+    <div class="background-image owl-carousel owl-theme">
+      <div class="carousel-slider-image img-1"></div>
+      <div class="carousel-slider-image img-2"></div>
+      <div class="carousel-slider-image img-3"></div>
+    </div>
+    <!-- <div class="background-image-overlay"></div> -->
 
     <!-- Sidebar navigation -->
     <div class="sideBar-navigation">
@@ -77,7 +93,7 @@
         <div class="contact-information">
           <div class="information-text">
             <i class="fas fa-map-marker-alt"></i>
-            <p>Vojvode Misica 28, Pirot</p>
+            <p>Vojvode Mišića 28, Pirot</p>
           </div>
           <div class="information-text">
             <i class="far fa-envelope"></i>
@@ -85,7 +101,11 @@
           </div>
           <div class="information-text">
             <i class="fas fa-phone"></i>
-            <p>010 321563</p>
+            <p>062 88-18-550</p>
+          </div>
+          <div class="information-text">
+            <i class="fas fa-tty"></i>
+            <p>010 321-563</p>
           </div>
         </div>
       </div>
@@ -116,6 +136,13 @@
                 <li><a href="#">Video Galerija</a></li>
               </ul>
             </li>
+            <li class="navigation-item subMenu-item">
+              <a href="#" class="navigation-link subMenu-entry">Testovi</a>
+              <ul>
+                <li><a href="#">Test 1</a></li>
+                <li><a href="#">Test 2</a></li>
+              </ul>
+            </li>
             <li class="navigation-item">
               <a href="" class="navigation-link">Kontakt</a>
             </li>
@@ -132,7 +159,7 @@
         </a>
       </div>
       <div class="call-to-action">
-        <div class="banner">
+        <!-- <div class="banner">
           <h1>Auto Skola Wintera</h1>
           <div class="banner-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -143,7 +170,7 @@
             exercitationem quia.
           </div>
           <a href="" class="banner-button">Kontaktirajte nas</a>
-        </div>
+        </div> -->
         <div class="social-links">
           <!-- <h2>Pratite nas na drustvenim mrezama</h2> -->
           <div class="links">
@@ -169,24 +196,27 @@
       <div class="aboutUs-description">
         <h2 class="aboutUs-heading">O nama</h2>
         <p class="aboutUs-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi
-          iure praesentium. Odit dolore nulla doloribus eius expedita
-          voluptatibus sint, officiis saepe nam maiores sapiente id suscipit
-          quaerat? Cupiditate consequuntur natus dolores repellendus placeat
-          corrupti, voluptas ducimus in ipsam fuga quia aut fugit excepturi
-          eligendi sunt non tempore eum obcaecati provident officiis asperiores?
-          Sit enim voluptates mollitia modi, praesentium sunt.
+          Auto škola WINTERA osnovana je u Pirotu 2005. godine.
         </p>
         <p class="aboutUs-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          cupiditate perspiciatis distinctio obcaecati! Ab saepe nihil culpa
-          animi repellat voluptatibus, magni quam nam accusantium explicabo
-          voluptate laborum eligendi reiciendis pariatur?
+          Auto škola se nalazi u ulici Vojvode Mišića 28 u kojoj se odvija
+          teorijska nastava i koja je opremljena nastavnim sredstvima prema
+          najsavremenijoj metodologiji za edukaciju u ovoj oblasti.
         </p>
         <p class="aboutUs-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-          alias! Suscipit enim, velit delectus neque eaque quas repudiandae
-          iusto illo.
+          Nasa auto škola ima dugi niz uspesnih godina obučavanja polaznika u
+          poslednjih 14 godina. Iskustvo naših zaposlenih nije samo u praktičnom
+          delu obuke već i u teorijskom. Nije li ovo jedno od presudnih faktora,
+          koje zelite za Vas ili Vašu decu?
+        </p>
+        <p class="aboutUs-text">
+          Naši zaposleni već godinama se pokazuju kao odlični profesionalci uz
+          svoje visegodisnje iskustvo u ovom poslu. Auto škola WINTERA garantuje
+          takvu obuku nakon koje ćete biti spremni za bezbedno učestvovanje u
+          saobraćaju. Već sa prvim kontaktom sa našom auto školom videćete da sa
+          velikom željom i voljom radimo svoj posao. Trudimo se da kandidati ne
+          budu samo zadovoljni obukom vec i paznjom koju im pruzamo. Oseticete
+          da za ulozeni novac dobijate punu vrednost nase usluge.
         </p>
         <div class="aboutUs-plans">
           <div class="aboutUs-plan">
@@ -287,16 +317,17 @@
         <div class="footer-contact">
           <p>Kontaktirajte nas:</p>
           <p><i class="far fa-envelope"></i>autoskolawintera@gmail.com</p>
-          <p><i class="fas fa-phone"></i>010 321563</p>
+          <p><i class="fas fa-phone"></i>062 88-18-550</p>
+          <p><i class="fas fa-tty"></i>010 321-563</p>
         </div>
         <div class="footer-location">
-          <p class="location-text">Posetite nas na nasoj lokaciji:</p>
+          <p class="location-text">Posetite nas na našoj lokaciji:</p>
           <p class="location">
-            <i class="fas fa-map-marker-alt"></i>Vojvode Misica 28, Pirot.
+            <i class="fas fa-map-marker-alt"></i>Vojvode Mišića 28, Pirot.
           </p>
         </div>
         <div class="footer-social">
-          <p>Zapratite nas na drustvenim mrezama:</p>
+          <p>Zapratite nas na društvenim mrežama:</p>
           <div class="footer-socialLinks">
             <a
               href="https://www.facebook.com/autoskolawinterapirot/"
@@ -312,7 +343,7 @@
           <div class="footer-logo">
             <img src="./img/logo.svg" alt="" />
           </div>
-          <p class="slogan">Ucinimo voznju bezbednijom.</p>
+          <p class="slogan">Učinimo vožnju bezbednijom.</p>
         </div>
       </div>
       <div class="copyrights">
@@ -320,6 +351,26 @@
         <p>Web Development - Vuk</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Carousel -->
+    <script>
+      $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          items: 1
+        });
+      });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./js/animations.js"></script>
   </body>

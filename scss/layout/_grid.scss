@@ -60,7 +60,7 @@
     grid-column: 1 / -1;
     grid-row: 2 / 3;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: max-content 2fr;
     @media only screen and (max-width: 1024px) {
       grid-row: 1 / 2;
       grid-template-columns: 1fr 2fr;

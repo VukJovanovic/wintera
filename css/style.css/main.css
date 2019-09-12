@@ -74,7 +74,7 @@ ul {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: max-content 2fr; }
   @media only screen and (max-width: 1024px) {
     .home-page-content .header-navigation,
     .category-page-content .header-navigation {
@@ -131,21 +131,68 @@ footer .footer-content {
     footer .footer-content {
       grid-template-columns: 1fr; } }
 
-.background-image {
+.owl-carousel {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  background-image: url("../../img/background.jpg");
-  background-position: center;
-  background-size: cover; }
+  max-height: 100vh;
+  z-index: 1; }
+  .owl-carousel .carousel-slider-image {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; }
+  .owl-carousel .img-1 {
+    background-image: url("../../img/img1.jpg"); }
+  .owl-carousel .img-2 {
+    background-image: url("../../img/img2.jpg"); }
+  .owl-carousel .img-3 {
+    background-image: url("../../img/img3.jpg"); }
+  .owl-carousel .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    padding: 0.5rem;
+    border-radius: 5px 0px 0px 5px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #002d40; }
+    @media only screen and (max-width: 1024px) {
+      .owl-carousel .owl-dots {
+        flex-direction: row;
+        height: 50px;
+        top: 93vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        border-radius: 5px 5px 0px 0px;
+        justify-content: center;
+        padding: 1rem 0.5rem; } }
+  .owl-carousel .owl-dots button {
+    border-radius: 5rem !important;
+    margin: 0.3rem 0 !important; }
+    @media only screen and (max-width: 1024px) {
+      .owl-carousel .owl-dots button {
+        margin: 0.3rem 2rem; } }
+    .owl-carousel .owl-dots button:focus {
+      outline: none; }
+  .owl-carousel .owl-dots button span {
+    background: white !important;
+    margin: 0.5rem 0.6rem !important; }
+  .owl-carousel .owl-dots .active {
+    border: 1px solid #f9fd50 !important; }
+  .owl-carousel .owl-dots .active span {
+    background: #f9fd50 !important;
+    margin: 0.3rem 0.5rem !important; }
 
 .background-image-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 2;
   height: 100vh;
   background-color: rgba(0, 45, 64, 0.3); }
 
@@ -153,7 +200,8 @@ footer .footer-content {
   background-color: #002d40;
   display: flex;
   justify-content: right;
-  padding-right: 100px; }
+  padding-right: 100px;
+  z-index: 2; }
   @media only screen and (max-width: 1200px) {
     .header-contact-information {
       padding: 0 50px; } }
@@ -452,6 +500,7 @@ footer .footer-content {
       background-color: #ffd700; }
 
 .call-to-action .social-links {
+  z-index: 2;
   display: flex;
   background-color: #002d40;
   align-self: flex-end;
@@ -467,10 +516,10 @@ footer .footer-content {
       margin-bottom: 0; }
     .call-to-action .social-links .link i {
       font-size: 2.5rem;
-      color: #f9fd50;
+      color: white;
       transition: color 0.4s; }
       .call-to-action .social-links .link i:hover {
-        color: #ffd700; }
+        color: #f9fd50; }
 
 .aboutUs-content {
   width: 100vw;
@@ -551,7 +600,7 @@ footer .footer-content {
     color: white;
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    line-height: 2rem; }
+    line-height: 2.7rem; }
     .aboutUs-content .aboutUs-description .aboutUs-text:last-child {
       margin-bottom: 0; }
   .aboutUs-content .aboutUs-description .aboutUs-plans {
