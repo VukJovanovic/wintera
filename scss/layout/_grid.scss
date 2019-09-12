@@ -18,22 +18,22 @@
     grid-template-rows: max-content;
     align-content: flex-end;
 
-    @media only screen and (max-width: 1024px) {
-      grid-template-columns: minmax(50px, 1fr) max-content minmax(50px, 1fr);
-      grid-row: 3 / 4;
-    }
+    // @media only screen and (max-width: 1024px) {
+    //   grid-template-columns: minmax(50px, 1fr) max-content minmax(50px, 1fr);
+    //   grid-row: 3 / 4;
+    // }
 
-    @media only screen and (max-width: 480px) {
-      grid-template-columns: minmax(20px, 1fr) max-content minmax(20px, 1fr);
-    }
+    // @media only screen and (max-width: 480px) {
+    //   grid-template-columns: minmax(20px, 1fr) max-content minmax(20px, 1fr);
+    // }
 
-    .banner {
-      grid-column: 1 / 3;
+    // .banner {
+    //   grid-column: 1 / 3;
 
-      @media only screen and (max-width: 1024px) {
-        grid-column: 2 / 3;
-      }
-    }
+    //   @media only screen and (max-width: 1024px) {
+    //     grid-column: 2 / 3;
+    //   }
+    // }
 
     .social-links {
       grid-column: 4 / 5;
