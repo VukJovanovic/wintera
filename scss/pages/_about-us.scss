@@ -172,6 +172,10 @@
     justify-content: center;
     overflow: hidden;
 
+    .owl-loaded {
+      display: inline-block;
+    }
+
     .owl-stage {
       width: 100% !important;
       display: flex !important;

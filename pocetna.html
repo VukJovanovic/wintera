@@ -261,7 +261,7 @@
     <!-- Ko smo mi sekcija -->
     <div class="team-section">
       <h2 class="team-section-heading ">Upoznajte nas tim</h2>
-      <div class="team-carousel owl-carousel owl-theme">
+      <div class="team-carousel owl-carousel owl-theme" id="team-carousel">
         <div class="team-carousel-card" id="card-1">
           <div class="team-carousel-card-background">
             <div class="team-carousel-card-background-overlay"></div>
@@ -397,7 +397,7 @@
     <!-- Carousel -->
     <script>
       $(document).ready(function() {
-        $('.main-carousel').owlCarousel({
+        $('#main-carousel').owlCarousel({
           loop: true,
           autoplay: true,
           autoplayTimeout: 3000,
@@ -405,11 +405,12 @@
           items: 1
         });
 
-        $('.team-carousel').owlCarousel({
+        $('#team-carousel').owlCarousel({
           items: 3,
           dots: false,
           mouseDrag: true,
           responsiveClass: true,
+          responsiveRefreshRate: true,
           responsive: {
             0: {
               items: 1
