@@ -87,23 +87,6 @@ ul {
 .team-section {
   display: grid;
   grid-template-columns: 1fr; }
-  .team-section .team-collection {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem; }
-    @media only screen and (max-width: 1024px) {
-      .team-section .team-collection {
-        grid-template-columns: 1fr 1fr 1fr 1fr; } }
-    @media only screen and (max-width: 850px) {
-      .team-section .team-collection {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
-        row-gap: 3rem; } }
-    @media only screen and (max-width: 600px) {
-      .team-section .team-collection {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        row-gap: 3rem; } }
 
 footer .footer-content {
   display: grid;
@@ -116,25 +99,25 @@ footer .footer-content {
     footer .footer-content {
       grid-template-columns: 1fr; } }
 
-.owl-carousel {
+.main-carousel {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   max-height: 100vh;
   z-index: 1; }
-  .owl-carousel .carousel-slider-image {
+  .main-carousel .carousel-slider-image {
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center; }
-  .owl-carousel .img-1 {
-    background-image: url("../../img/img1.jpg"); }
-  .owl-carousel .img-2 {
-    background-image: url("../../img/img2.jpg"); }
-  .owl-carousel .img-3 {
-    background-image: url("../../img/img3.jpg"); }
-  .owl-carousel .owl-dots {
+  .main-carousel .img-1 {
+    background-image: url("../../img/Auto Skola Wintera B Kategorija.jpg"); }
+  .main-carousel .img-2 {
+    background-image: url("../../img/Auto skola wintera pirot.jpg"); }
+  .main-carousel .img-3 {
+    background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg"); }
+  .main-carousel .owl-dots {
     position: absolute;
     top: 50%;
     right: 18px;
@@ -145,22 +128,22 @@ footer .footer-content {
     flex-direction: column;
     background-color: #002d40; }
     @media only screen and (max-width: 1024px) {
-      .owl-carousel .owl-dots {
+      .main-carousel .owl-dots {
         right: 0; } }
-  .owl-carousel .owl-dots button {
+  .main-carousel .owl-dots button {
     border-radius: 5rem !important;
     margin: 0.3rem 0 !important; }
     @media only screen and (max-width: 1024px) {
-      .owl-carousel .owl-dots button {
+      .main-carousel .owl-dots button {
         margin: 0.3rem 2rem; } }
-    .owl-carousel .owl-dots button:focus {
+    .main-carousel .owl-dots button:focus {
       outline: none; }
-  .owl-carousel .owl-dots button span {
+  .main-carousel .owl-dots button span {
     background: white !important;
     margin: 0.5rem 0.6rem !important; }
-  .owl-carousel .owl-dots .active {
+  .main-carousel .owl-dots .active {
     border: 1px solid #f9fd50 !important; }
-  .owl-carousel .owl-dots .active span {
+  .main-carousel .owl-dots .active span {
     background: #f9fd50 !important;
     margin: 0.3rem 0.5rem !important; }
 
@@ -531,7 +514,6 @@ footer .footer-content {
       height: 30vh;
       border-radius: 5px;
       box-shadow: 2rem 0.3rem 4rem rgba(0, 45, 64, 0.25);
-      background-image: url("../../img/background.jpg");
       background-position: center;
       background-size: cover; }
       @media only screen and (max-width: 1024px) {
@@ -539,11 +521,14 @@ footer .footer-content {
           margin-top: 6rem;
           width: 40vw;
           height: 30vw; } }
+    .aboutUs-content .aboutUs-photo-1 {
+      background-image: url("../../img/Auto Skola Wintera B Kategorija.jpg"); }
     .aboutUs-content .aboutUs-photo-2 {
       position: absolute;
       top: 15vh;
       right: 2rem;
-      border: 1px solid #f9fd50; }
+      border: 1px solid #f9fd50;
+      background-image: url("../../img/Auto skola wintera pirot.jpg"); }
       @media only screen and (max-width: 1024px) {
         .aboutUs-content .aboutUs-photo-2 {
           top: 2rem;
@@ -552,12 +537,16 @@ footer .footer-content {
       position: absolute;
       top: 19vw;
       left: 40%;
-      transform: translateX(-40%); }
+      transform: translateX(-40%);
+      background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg"); }
       @media only screen and (max-width: 1024px) {
         .aboutUs-content .aboutUs-photo-3 {
           top: 0;
           left: 50%;
           transform: translateX(-50%); } }
+    @media only screen and (max-width: 1024px) {
+      .aboutUs-content .aboutUs-photo {
+        display: none; } }
   .aboutUs-content .aboutUs-description .aboutUs-heading {
     color: white;
     font-weight: 300;
@@ -604,21 +593,22 @@ footer .footer-content {
         line-height: 2rem; }
 
 .team-section {
-  padding: 50px 100px 50px 100px; }
+  padding: 50px 100px 100px 100px; }
   @media only screen and (max-width: 670px) {
     .team-section {
       padding: 50px 50px 60px 50px; } }
   @media only screen and (max-width: 480px) {
     .team-section {
       padding: 50px 20px 60px 20px; } }
-  .team-section h2 {
+  .team-section-heading {
     justify-self: center;
     font-weight: 300;
     font-size: 2.5rem;
     color: #002d40;
     position: relative;
-    padding-bottom: 1rem; }
-    .team-section h2::after {
+    padding-bottom: 1rem;
+    margin-bottom: 5rem; }
+    .team-section-heading::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -626,31 +616,99 @@ footer .footer-content {
       width: 40px;
       height: 1px;
       background-color: #002d40; }
-  .team-section .team-collection {
-    margin: 7rem 0;
-    justify-items: center; }
-    .team-section .team-collection .team-user {
+  .team-section .team-carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; }
+    .team-section .team-carousel .owl-stage {
+      width: 100% !important;
+      display: flex !important; }
+    .team-section .team-carousel .owl-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-top: 5rem; }
+    .team-section .team-carousel .owl-item {
+      width: 250px !important;
+      margin-right: 4rem; }
+    .team-section .team-carousel .owl-item.active {
+      width: 250px !important; }
+    .team-section .team-carousel .team-carousel-card {
+      width: 250px;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .team-section .team-collection .team-user img {
-        width: 120px;
-        height: 120px;
+      align-content: center;
+      align-items: center;
+      box-shadow: 1rem 1rem 1rem rgba(0, 45, 64, 0.2);
+      border-radius: 5px;
+      padding-bottom: 2rem;
+      position: relative;
+      margin-right: 4rem; }
+      .team-section .team-carousel .team-carousel-card .team-carousel-card-background {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px 5px 0px 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); }
+        .team-section .team-carousel .team-carousel-card .team-carousel-card-background-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 45, 64, 0.3);
+          border-radius: 5px 5px 0px 0px; }
+      .team-section .team-carousel .team-carousel-card-member {
+        width: 130px;
+        height: 130px;
         border-radius: 100%;
-        margin-bottom: 2rem; }
-        @media only screen and (max-width: 480px) {
-          .team-section .team-collection .team-user img {
-            width: 80px;
-            height: 80px; } }
-      .team-section .team-collection .team-user h3 {
-        font-weight: 300;
-        font-size: 1.8rem;
-        color: #002d40;
-        margin-bottom: 1rem; }
-      .team-section .team-collection .team-user p {
-        color: #002d40;
-        font-weight: 300;
-        font-size: 1.2rem; }
+        background-position: center;
+        background-size: cover;
+        border: 1px solid white;
+        position: absolute;
+        top: 42%; }
+      .team-section .team-carousel .team-carousel-card-info {
+        margin-top: 5rem; }
+        .team-section .team-carousel .team-carousel-card-info h2 {
+          font-weight: 300;
+          font-size: 2rem;
+          color: #002d40;
+          margin-bottom: 2rem; }
+        .team-section .team-carousel .team-carousel-card-info .job-title li {
+          text-align: center;
+          margin-bottom: 1rem;
+          font-size: 1.5rem; }
+    .team-section .team-carousel #card-1 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_1.jpg"); }
+    .team-section .team-carousel #card-1 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 1.jpg"); }
+    .team-section .team-carousel #card-2 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_2.jpg"); }
+    .team-section .team-carousel #card-2 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 2.jpg"); }
+    .team-section .team-carousel #card-3 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_3.jpg"); }
+    .team-section .team-carousel #card-3 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 3.jpg"); }
+    .team-section .team-carousel #card-4 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_4.jpg"); }
+    .team-section .team-carousel #card-4 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 5.jpg"); }
+    .team-section .team-carousel #card-5 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_5.jpg"); }
+    .team-section .team-carousel #card-5 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 4.jpg"); }
+    .team-section .team-carousel #card-6 .team-carousel-card-background {
+      background-image: url("../../img/auto_skola_wintera_instruktor_6.jpg"); }
+    .team-section .team-carousel #card-6 .team-carousel-card-member {
+      background-image: url("../../img/Auto Skola Wintera Tim 10.jpg"); }
 
 footer {
   background-color: #002d40;

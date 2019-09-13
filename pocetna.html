@@ -28,7 +28,10 @@
     <link rel="stylesheet" href="css/style.css/main.css" />
   </head>
   <body>
-    <div class="background-image owl-carousel owl-theme">
+    <div
+      class="background-image owl-carousel owl-theme main-carousel"
+      id="main-carousel"
+    >
       <div class="carousel-slider-image img-1"></div>
       <div class="carousel-slider-image img-2"></div>
       <div class="carousel-slider-image img-3"></div>
@@ -257,57 +260,90 @@
     </div>
     <!-- Ko smo mi sekcija -->
     <div class="team-section">
-      <h2>Ko smo mi?</h2>
-      <div class="team-collection">
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+      <h2 class="team-section-heading ">Upoznajte nas tim</h2>
+      <div class="team-carousel owl-carousel owl-theme">
+        <div class="team-carousel-card" id="card-1">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+
+        <div class="team-carousel-card" id="card-2">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+
+        <div class="team-carousel-card" id="card-3">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+
+        <div class="team-carousel-card" id="card-4">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+
+        <div class="team-carousel-card" id="card-5">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
-        </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
-        </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
-        </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
-        </div>
-        <div class="team-user">
-          <img src="./img/user.jpg" alt="" />
-          <h3>Lazar Nikolic</h3>
-          <p>Instruktor</p>
+
+        <div class="team-carousel-card" id="card-6">
+          <div class="team-carousel-card-background">
+            <div class="team-carousel-card-background-overlay"></div>
+          </div>
+          <div class="team-carousel-card-member"></div>
+          <div class="team-carousel-card-info">
+            <h2>Toni Nikolic</h2>
+            <ul class="job-title">
+              <li>Osnivac</li>
+              <li>Instruktor</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -361,12 +397,16 @@
     <!-- Carousel -->
     <script>
       $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
+        $('.main-carousel').owlCarousel({
           loop: true,
           autoplay: true,
           autoplayTimeout: 3000,
           autoplayHoverPause: true,
           items: 1
+        });
+
+        $('.team-carousel').owlCarousel({
+          items: 3
         });
       });
     </script>
