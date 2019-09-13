@@ -406,7 +406,24 @@
         });
 
         $('.team-carousel').owlCarousel({
-          items: 3
+          items: 3,
+          dots: false,
+          mouseDrag: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            480: {
+              items: 1
+            },
+            769: {
+              items: 2
+            },
+            1200: {
+              items: 3
+            }
+          }
         });
       });
     </script>
