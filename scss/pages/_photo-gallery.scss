@@ -1,0 +1,82 @@
+.gallery-container {
+  padding: 50px 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 50px;
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 50px 20px;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  .photoGallery {
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+
+    .photoGallery-item {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      //   background-color: $primary-color;
+      &:nth-child(1) {
+        background-image: url('../../img/Auto\ skola\ wintera\ polaganje\ za\ vozacku\ dozvolu.jpg');
+      }
+      &:nth-child(2) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_1.jpg');
+      }
+      &:nth-child(3) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_2.jpg');
+      }
+      &:nth-child(4) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_3.jpg');
+      }
+      &:nth-child(5) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_4.jpg');
+      }
+      &:nth-child(6) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_5.jpg');
+      }
+      &:nth-child(7) {
+        background-image: url('../../img/Auto\ skola\ wintera\ polaganje\ za\ vozacku\ dozvolu.jpg');
+      }
+      &:nth-child(8) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_1.jpg');
+      }
+      &:nth-child(9) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_2.jpg');
+      }
+      &:nth-child(10) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_3.jpg');
+      }
+      &:nth-child(11) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_4.jpg');
+      }
+      &:nth-child(12) {
+        background-image: url('../../img/auto_skola_wintera_instruktor_5.jpg');
+      }
+    }
+  }
+}

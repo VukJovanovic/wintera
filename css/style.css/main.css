@@ -48,24 +48,28 @@ ul {
       grid-column: 4 / 5; }
 
 .home-page-content .header-contact-information,
-.category-page-content .header-contact-information {
+.category-page-content .header-contact-information,
+.photoGallery-page-content .header-contact-information {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1 / 2; }
   @media only screen and (max-width: 1024px) {
     .home-page-content .header-contact-information,
-    .category-page-content .header-contact-information {
+    .category-page-content .header-contact-information,
+    .photoGallery-page-content .header-contact-information {
       display: none; } }
 
 .home-page-content .header-navigation,
-.category-page-content .header-navigation {
+.category-page-content .header-navigation,
+.photoGallery-page-content .header-navigation {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   grid-template-columns: max-content 2fr; }
   @media only screen and (max-width: 1024px) {
     .home-page-content .header-navigation,
-    .category-page-content .header-navigation {
+    .category-page-content .header-navigation,
+    .photoGallery-page-content .header-navigation {
       grid-row: 1 / 2;
       grid-template-columns: 1fr 2fr; } }
 
@@ -101,6 +105,32 @@ footer .footer-content {
   @media only screen and (max-width: 600px) {
     footer .footer-content {
       grid-template-columns: 1fr; } }
+
+.photoGallery-page-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 40px 60px max-content max-content max-content; }
+  @media only screen and (max-width: 1024px) {
+    .photoGallery-page-content {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 60px max-content max-content max-content; } }
+  .photoGallery-page-content .page-heading-image {
+    grid-row: 2 / 4;
+    grid-column: 1 / -1; }
+    @media only screen and (max-width: 1024px) {
+      .photoGallery-page-content .page-heading-image {
+        grid-row: 1 / 3; } }
+  .photoGallery-page-content .gallery-container {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5; }
+    .photoGallery-page-content .gallery-container .photoGallery {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 400px)); }
+  .photoGallery-page-content footer {
+    grid-row: 5 / -1;
+    grid-column: 1 / -1; }
 
 .main-carousel {
   position: absolute;
@@ -712,6 +742,93 @@ footer .footer-content {
       background-image: url("../../img/auto_skola_wintera_instruktor_6.jpg"); }
     .team-section .team-carousel #card-6 .team-carousel-card-member {
       background-image: url("../../img/Auto Skola Wintera Tim 10.jpg"); }
+
+.gallery-container {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1024px) {
+    .gallery-container {
+      padding: 50px; } }
+  @media only screen and (max-width: 450px) {
+    .gallery-container {
+      padding: 50px 20px; } }
+  .gallery-container h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #002d40;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+    .gallery-container h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #002d40; }
+  .gallery-container .photoGallery {
+    width: 100%;
+    height: 100%;
+    justify-content: center; }
+    .gallery-container .photoGallery .photoGallery-item {
+      height: 300px;
+      background-size: cover;
+      background-position: center; }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(1) {
+        background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(2) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_1.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(3) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_2.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(4) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_3.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(5) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_4.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(6) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_5.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(7) {
+        background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(8) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_1.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(9) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_2.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(10) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_3.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(11) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_4.jpg"); }
+      .gallery-container .photoGallery .photoGallery-item:nth-child(12) {
+        background-image: url("../../img/auto_skola_wintera_instruktor_5.jpg"); }
+
+.page-heading-image {
+  height: 300px;
+  background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg");
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .page-heading-image h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(0, 45, 64, 0.5);
+    border-radius: 5px;
+    position: relative; }
+    .page-heading-image h1::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      transform: translateX(-50%);
+      width: 50%;
+      background-color: #f9fd50; }
 
 footer {
   background-color: #002d40;
