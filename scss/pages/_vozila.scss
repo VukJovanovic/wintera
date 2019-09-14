@@ -1,0 +1,10 @@
+.carGallery {
+  justify-content: center;
+  &-item {
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
