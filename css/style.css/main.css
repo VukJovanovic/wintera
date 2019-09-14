@@ -608,7 +608,8 @@ footer .footer-content {
   .aboutUs-content .aboutUs-description .aboutUs-plans {
     margin-top: 5rem; }
     .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan {
-      border-top: 1px solid #f9fd50; }
+      border-top: 1px solid #f9fd50;
+      padding-top: 2rem; }
       .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading {
         padding-top: 1rem;
         display: flex;
