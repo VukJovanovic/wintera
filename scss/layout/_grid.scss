@@ -139,6 +139,11 @@ footer {
       grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
     }
   }
+
+  .videoGallery-container {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
   footer {
     grid-row: 5 / -1;
     grid-column: 1 / -1;

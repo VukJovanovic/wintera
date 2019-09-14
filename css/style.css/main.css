@@ -128,6 +128,9 @@ footer .footer-content {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 400px)); }
+  .photoGallery-page-content .videoGallery-container {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5; }
   .photoGallery-page-content footer {
     grid-row: 5 / -1;
     grid-column: 1 / -1; }
@@ -615,7 +618,8 @@ footer .footer-content {
         .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading i {
           color: #f9fd50;
           margin-right: 10px;
-          justify-self: left; }
+          justify-self: left;
+          font-size: 2rem; }
         .aboutUs-content .aboutUs-description .aboutUs-plans .aboutUs-plan .plan-heading h2 {
           color: white;
           font-weight: 300; }
@@ -800,6 +804,55 @@ footer .footer-content {
         background-image: url("../../img/auto_skola_wintera_instruktor_4.jpg"); }
       .gallery-container .photoGallery .photoGallery-item:nth-child(12) {
         background-image: url("../../img/auto_skola_wintera_instruktor_5.jpg"); }
+
+.videoGallery-container {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1024px) {
+    .videoGallery-container {
+      padding: 50px; } }
+  @media only screen and (max-width: 450px) {
+    .videoGallery-container {
+      padding: 50px 20px; } }
+  .videoGallery-container h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #002d40;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+    .videoGallery-container h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #002d40; }
+  .videoGallery-container .videoGallery {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 200px; }
+    @media only screen and (max-width: 1200px) {
+      .videoGallery-container .videoGallery {
+        padding: 0 100px; } }
+    @media only screen and (max-width: 800px) {
+      .videoGallery-container .videoGallery {
+        padding: 0; } }
+    .videoGallery-container .videoGallery .video-iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 2rem; }
+      .videoGallery-container .videoGallery .video-iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
 
 .page-heading-image {
   height: 300px;
