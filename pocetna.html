@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="css/style.css/main.css" />
   </head>
   <body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- image slider -->
     <div
       class="background-image owl-carousel owl-theme main-carousel"
       id="main-carousel"
@@ -393,6 +399,10 @@
 
     <!-- Carousel -->
     <script>
+      $(window).on('load', function() {
+        $('.loader-wrapper').fadeOut('slow');
+      });
+
       $(document).ready(function() {
         $('#main-carousel').owlCarousel({
           loop: true,
