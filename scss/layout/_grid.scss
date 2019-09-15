@@ -47,7 +47,7 @@
 
 .home-page-content,
 .category-page-content,
-.photoGallery-page-content {
+.template-page-content {
   .header-contact-information {
     display: grid;
     grid-column: 1 / -1;
@@ -114,7 +114,7 @@ footer {
 
 // Gallery pages styles
 
-.photoGallery-page-content {
+.template-page-content {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -154,6 +154,12 @@ footer {
         grid-template-columns: 1fr;
       }
     }
+  }
+
+  .category-container {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(330px, 700px);
   }
 
   .videoGallery-container {
