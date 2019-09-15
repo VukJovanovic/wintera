@@ -1084,6 +1084,7 @@ footer .footer-content {
           transition: all 0.35s; }
       .category-container .category-content .category-item .category-item-content {
         max-height: 0;
+        overflow: hidden;
         padding: 0 2rem;
         color: #002d40;
         background: white;

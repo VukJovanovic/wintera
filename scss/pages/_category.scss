@@ -66,6 +66,7 @@
       }
       .category-item-content {
         max-height: 0;
+        overflow: hidden;
         padding: 0 2rem;
         color: $primary-color;
         background: white;
