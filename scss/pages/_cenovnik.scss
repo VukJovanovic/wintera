@@ -1,0 +1,85 @@
+.cenovnik-container {
+  padding: 50px 100px;
+  @media only screen and (max-width: 700px) {
+    padding: 50px 50px;
+  }
+  @media only screen and (max-width: 530px) {
+    padding: 50px 20px;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  .cenovnik-content-card {
+    box-shadow: $box-shadow;
+    .cenovnik-content-heading {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      background-color: $primary-color;
+      border-radius: 5px 5px 0px 0px;
+      align-content: center;
+
+      h3,
+      p {
+        font-weight: 300;
+        color: white;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .cenovnik-content-details {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .details-grey {
+      background-color: rgba($light-grey, 0.28);
+    }
+  }
+
+  .cenovnik-more-info {
+    margin-top: 4rem;
+    .cenovnik-more-info-heading {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      li {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

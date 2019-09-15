@@ -129,6 +129,17 @@ footer .footer-content {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 400px)); }
+  .photoGallery-page-content .cenovnik-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / -1; }
+    .photoGallery-page-content .cenovnik-container .cenovnik-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem; }
+      @media only screen and (max-width: 1300px) {
+        .photoGallery-page-content .cenovnik-container .cenovnik-content {
+          grid-template-columns: 1fr; } }
   .photoGallery-page-content .videoGallery-container {
     grid-column: 1 / -1;
     grid-row: 4 / 5; }
@@ -946,6 +957,69 @@ footer .footer-content {
 
 #vozila-page-image {
   background-image: url("../../img/auto-skola-wintera-vozila.jpg"); }
+
+.cenovnik-container {
+  padding: 50px 100px; }
+  @media only screen and (max-width: 700px) {
+    .cenovnik-container {
+      padding: 50px 50px; } }
+  @media only screen and (max-width: 530px) {
+    .cenovnik-container {
+      padding: 50px 20px; } }
+  .cenovnik-container h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: #002d40;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+    .cenovnik-container h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #002d40; }
+  .cenovnik-container .cenovnik-content-card {
+    box-shadow: 1rem 1rem 1rem rgba(0, 45, 64, 0.2); }
+    .cenovnik-container .cenovnik-content-card .cenovnik-content-heading {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      background-color: #002d40;
+      border-radius: 5px 5px 0px 0px;
+      align-content: center; }
+      .cenovnik-container .cenovnik-content-card .cenovnik-content-heading h3,
+      .cenovnik-container .cenovnik-content-card .cenovnik-content-heading p {
+        font-weight: 300;
+        color: white; }
+      .cenovnik-container .cenovnik-content-card .cenovnik-content-heading h3 {
+        font-size: 1.5rem; }
+      .cenovnik-container .cenovnik-content-card .cenovnik-content-heading p {
+        font-size: 1.3rem; }
+    .cenovnik-container .cenovnik-content-card .cenovnik-content-details {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem; }
+      .cenovnik-container .cenovnik-content-card .cenovnik-content-details p {
+        font-size: 1.4rem; }
+    .cenovnik-container .cenovnik-content-card .details-grey {
+      background-color: rgba(197, 200, 202, 0.28); }
+  .cenovnik-container .cenovnik-more-info {
+    margin-top: 4rem; }
+    .cenovnik-container .cenovnik-more-info .cenovnik-more-info-heading {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem; }
+    .cenovnik-container .cenovnik-more-info p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .cenovnik-container .cenovnik-more-info ul li {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
 
 footer {
   background-color: #002d40;

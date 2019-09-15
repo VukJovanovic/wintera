@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Auto Skola Wintera Pirot</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css/main.css" />
+  </head>
+  <body>
+
+     <!-- Loader -->
+     <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+    <!-- Sidebar navigation -->
+    <div class="sideBar-navigation">
+      <a href="" id="sideBar-close-button" class="sideBar-navigation-close">
+        <i class="fas fa-times"></i>
+      </a>
+      <ul id="sideBar-navList">
+        <li><a href="pocetna.html">Početna</a></li>
+        <li><a href="">O nama</a></li>
+        <li><a href="kategorije.html">Kategorije</a></li>
+        <li><a href="vozila.html">Vozila</a></li>
+        <li><a href="cenovnik.html">Cenovnik</a></li>
+        <li class="sideBar-dropdown-tabs">
+          <div class="sideBar-dropdown">
+            <input type="checkbox" name="" id="gallery-dropdown" />
+            <label for="gallery-dropdown">Galerija</label>
+
+            <div class="sideBar-dropdown-content">
+              <a href="fotogalerija.html">Foto Galerija</a>
+              <a href="videogalerija.html">Video Galerija</a>
+            </div>
+          </div>
+        </li>
+        <li class="sideBar-dropdown-tabs">
+          <div class="sideBar-dropdown">
+            <input type="checkbox" name="" id="test-dropdown" />
+            <label for="test-dropdown">Testovi</label>
+
+            <div class="sideBar-dropdown-content">
+              <a href="http://www.autoskolesrbije.org/">Test 1</a>
+              <a href="https://servisi.euprava.gov.rs/autoskole/prijava"
+                >Test 2</a
+              >
+            </div>
+          </div>
+        </li>
+        <li><a href="">Kontakt</a></li>
+      </ul>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/autoskolawinterapirot/"
+          class="social-links-link"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/autoskolawintera/"
+          class="social-links-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <div class="sideBar-overlay"></div>
+    <!-- Page content -->
+    <div class="photoGallery-page-content">
+      <!-- Contact information header -->
+      <div class="header-contact-information">
+        <div class="contact-information">
+          <div class="information-text">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Vojvode Mišića 28, Pirot</p>
+          </div>
+          <div class="information-text">
+            <i class="far fa-envelope"></i>
+            <p>autoskolawintera@gmail.com</p>
+          </div>
+          <div class="information-text">
+            <i class="fas fa-phone"></i>
+            <p>062 88-18-550</p>
+          </div>
+          <div class="information-text">
+            <i class="fas fa-tty"></i>
+            <p>010 321-563</p>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="header-navigation">
+        <div class="logo"><img src="./img/logo.svg" alt="" /></div>
+        <nav>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="pocetna.html" class="navigation-link">Početna</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">O nama</a>
+            </li>
+            <li class="navigation-item">
+              <a href="kategorije.html" class="navigation-link">Kategorije</a>
+            </li>
+            <li class="navigation-item">
+              <a href="vozila.html" class="navigation-link">Vozila</a>
+            </li>
+            <li class="navigation-item">
+              <a href="cenovnik.html" class="navigation-link">Cenovnik</a>
+            </li>
+            <li class="navigation-item subMenu-item">
+              <a href="#" class="navigation-link subMenu-entry">Galerija</a>
+              <ul>
+                <li><a href="fotogalerija.html">Foto Galerija</a></li>
+                <li><a href="videogalerija.html">Video Galerija</a></li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <a href="" class="navigation-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="#"
+          id="mobile-navigation-button"
+          class="mobile-navigation-button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <!-- page image -->
+      <div class="page-heading-image" id="vozila-page-image">
+          <h1>Cenovnik</h1>
+      </div>
+
+      <div class="cenovnik-container">
+          <h2>Obuka vozača za AM, A1, A2 i A kategoriju</h2>
+          <div class="cenovnik-content">
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>AM kategorija - Kandidat nema nijednu kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 40 časova</p>
+                  <p class="cenovnik-price">14.000,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Praktična obuka 7 časova</p>
+                    <p class="cenovnik-price">11.200,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Polaganje testa</p>
+                      <p class="cenovnik-price">3.500,00</p>
+                    </div>
+                    <div class="cenovnik-content-details details-grey">
+                        <p>Polaganje vožnje</p>
+                        <p class="cenovnik-price">3.500,00</p>
+                      </div>
+                      <div class="cenovnik-content-details">
+                          <p>Ukupno</p>
+                          <p class="cenovnik-price">32.200,00</p>
+                        </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>AM kategorija - Kandidat ima B kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 7 časova</p>
+                  <p class="cenovnik-price">2.800,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 7 časova</p>
+                  <p class="cenovnik-price">11.200,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">21.000,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A1 kategorija - Kandidat ne poseduje vozačku dozvolu</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 40 časova</p>
+                  <p class="cenovnik-price">14.000,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 20 časova</p>
+                  <p class="cenovnik-price">32.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">53.000,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A1 kategorija - Kandidat ima AM kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 7 časova</p>
+                  <p class="cenovnik-price">11.200,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">18.200,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A1 kategorija - Kandidat ima neku od kategorija: B,C,D,F,M</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 7 časova</p>
+                  <p class="cenovnik-price">2.800,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 20 časova</p>
+                  <p class="cenovnik-price">32.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">41.800,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A2 kategorija - Kandidat ne poseduje vozačku dozvolu</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 40 časova</p>
+                  <p class="cenovnik-price">14.000,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 30 časova</p>
+                  <p class="cenovnik-price">48.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">69.000,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A2 kategorija - Kandidat ima neku od kategorija: B,C,D,F,M</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 7 časova</p>
+                  <p class="cenovnik-price">2.800,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 30 časova</p>
+                  <p class="cenovnik-price">48.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">57.800,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A2 kategorija - Kandidat ima AM kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 14 časova</p>
+                  <p class="cenovnik-price">22.400,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">29.400,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A2 kategorija - Kandidat ima A1 kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 7 časova</p>
+                  <p class="cenovnik-price">11.200,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">18.200,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A kategorija - Kandidat ima AM kategoriju</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 20 časova</p>
+                  <p class="cenovnik-price">32.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">39.000,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A kategorija - Kandidat ima A1</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 14 časova</p>
+                  <p class="cenovnik-price">22.400,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">29.400,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A kategorija - Kandidat ima A2</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka</p>
+                  <p class="cenovnik-price">Nije predviđena</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 7 časova</p>
+                  <p class="cenovnik-price">11.200,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">18.200,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A kategorija - Kandidat ne poseduje vozačku dozvolu</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 40 časova</p>
+                  <p class="cenovnik-price">14.000,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 40 časova</p>
+                  <p class="cenovnik-price">64.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">85.000,00</p>
+                    </div>
+            </div>
+
+            <div class="cenovnik-content-card">
+                <div class="cenovnik-content-heading">
+                  <h3>A kategorija - Kandidat poseduje: B1, B, BE, C, D, F, M</h3>
+                  <p>Cena</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Teorijska obuka 7 časova</p>
+                  <p class="cenovnik-price">2.800,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                  <p>Praktična obuka 40 časova</p>
+                  <p class="cenovnik-price">64.000,00</p>
+                </div>
+                <div class="cenovnik-content-details">
+                  <p>Polaganje testa</p>
+                  <p class="cenovnik-price">3.500,00</p>
+                </div>
+                <div class="cenovnik-content-details details-grey">
+                    <p>Polaganje vožnje</p>
+                    <p class="cenovnik-price">3.500,00</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                      <p>Ukupno</p>
+                      <p class="cenovnik-price">73.800,00</p>
+                    </div>
+            </div>
+          </div>
+
+          <h2>Obuka vozača za B kategoriju</h2>
+          <div class="cenovnik-content">
+              <div class="cenovnik-content-card">
+                  <div class="cenovnik-content-heading">
+                    <h3>AM kategorija - Kandidat nema nijednu kategoriju</h3>
+                    <p>Cena</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                    <p>Teorijska obuka 40 časova</p>
+                    <p class="cenovnik-price">14.000,00</p>
+                  </div>
+                  <div class="cenovnik-content-details details-grey">
+                      <p>Praktična obuka 40 časova</p>
+                      <p class="cenovnik-price">48.000,00</p>
+                    </div>
+                    <div class="cenovnik-content-details">
+                        <p>Polaganje testa</p>
+                        <p class="cenovnik-price">3.500,00</p>
+                      </div>
+                      <div class="cenovnik-content-details details-grey">
+                          <p>Polaganje vožnje</p>
+                          <p class="cenovnik-price">3.500,00</p>
+                        </div>
+                        <div class="cenovnik-content-details">
+                            <p>Ukupno</p>
+                            <p class="cenovnik-price">69.000,00</p>
+                          </div>
+              </div>
+
+              <div class="cenovnik-content-card">
+                  <div class="cenovnik-content-heading">
+                    <h3>AM kategorija - Kandidat ima AM i A1 kategoriju</h3>
+                    <p>Cena</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                    <p>Teorijska obuka 7 časova</p>
+                    <p class="cenovnik-price">2.800,00</p>
+                  </div>
+                  <div class="cenovnik-content-details details-grey">
+                      <p>Praktična obuka 35 časova</p>
+                      <p class="cenovnik-price">42.000,00</p>
+                    </div>
+                    <div class="cenovnik-content-details">
+                        <p>Polaganje testa</p>
+                        <p class="cenovnik-price">3.500,00</p>
+                      </div>
+                      <div class="cenovnik-content-details details-grey">
+                          <p>Polaganje vožnje</p>
+                          <p class="cenovnik-price">3.500,00</p>
+                        </div>
+                        <div class="cenovnik-content-details">
+                            <p>Ukupno</p>
+                            <p class="cenovnik-price">51.800,00</p>
+                          </div>
+              </div>
+
+              <div class="cenovnik-content-card">
+                  <div class="cenovnik-content-heading">
+                    <h3>AM kategorija - Kandidat ima A2 i A kategoriju</h3>
+                    <p>Cena</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                    <p>Teorijska obuka 7 časova</p>
+                    <p class="cenovnik-price">2.800,00</p>
+                  </div>
+                  <div class="cenovnik-content-details details-grey">
+                      <p>Praktična obuka 30 časova</p>
+                      <p class="cenovnik-price">48.000,00</p>
+                    </div>
+                    <div class="cenovnik-content-details">
+                        <p>Polaganje testa</p>
+                        <p class="cenovnik-price">3.500,00</p>
+                      </div>
+                      <div class="cenovnik-content-details details-grey">
+                          <p>Polaganje vožnje</p>
+                          <p class="cenovnik-price">3.500,00</p>
+                        </div>
+                        <div class="cenovnik-content-details">
+                            <p>Ukupno</p>
+                            <p class="cenovnik-price">57.800,00</p>
+                          </div>
+              </div>
+              <div class="cenovnik-content-card">
+                  <div class="cenovnik-content-heading">
+                    <h3>AM kategorija - Kandidat ima F kategoriju</h3>
+                    <p>Cena</p>
+                  </div>
+                  <div class="cenovnik-content-details">
+                    <p>Teorijska obuka 7 časova</p>
+                    <p class="cenovnik-price">2.800,00</p>
+                  </div>
+                  <div class="cenovnik-content-details details-grey">
+                      <p>Praktična obuka 20 časova</p>
+                      <p class="cenovnik-price">32.000,00</p>
+                    </div>
+                    <div class="cenovnik-content-details">
+                        <p>Polaganje testa</p>
+                        <p class="cenovnik-price">3.500,00</p>
+                      </div>
+                      <div class="cenovnik-content-details details-grey">
+                          <p>Polaganje vožnje</p>
+                          <p class="cenovnik-price">3.500,00</p>
+                        </div>
+                        <div class="cenovnik-content-details">
+                            <p>Ukupno</p>
+                            <p class="cenovnik-price">41.800,00</p>
+                          </div>
+              </div>
+          </div>
+
+          <div class="cenovnik-more-info">
+              <h3 class="cenovnik-more-info-heading">Dopunski čas vožnje:</h3>
+              <p>Cena: 1.200,00</p>
+    
+              <h3 class="cenovnik-more-info-heading">Kondicioni čas vožnje:</h3>
+              <p>Obavljanje dopunske obuke za neaktivne vozače na našem ili vašem vozilu</p>
+              <p>Cena: 1.200,00</p>
+    
+              <h3 class="cenovnik-more-info-heading">Mogućnost plaćanja:</h3>
+              <ul>
+                <li>Plaćanje na više rata</li>
+                <li>Čekovi građanja</li>
+                <li>Plaćanje platnim karticama</li>
+              </ul>
+          </div>
+          
+
+      </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <p>Kontaktirajte nas:</p>
+          <p><i class="far fa-envelope"></i>autoskolawintera@gmail.com</p>
+          <p><i class="fas fa-phone"></i>062 88-18-550</p>
+          <p><i class="fas fa-tty"></i>010 321-563</p>
+        </div>
+        <div class="footer-location">
+          <p class="location-text">Posetite nas na nasoj lokaciji:</p>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i>Vojvode Misica 28, Pirot.
+          </p>
+        </div>
+        <div class="footer-social">
+          <p>Zapratite nas na drustvenim mrezama:</p>
+          <div class="footer-socialLinks">
+            <a
+              href="https://www.facebook.com/autoskolawinterapirot/"
+              class="link"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com/autoskolawintera/" class="link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="company-details">
+          <div class="footer-logo">
+            <img src="./img/logo.svg" alt="" />
+          </div>
+          <p class="slogan">Ucinimo voznju bezbednijom.</p>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p>Copyright 2019.</p>
+        <p>Web Development - Vuk</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./js/animations.js"></script>
+  </body>
+</html>
