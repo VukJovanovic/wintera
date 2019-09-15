@@ -172,6 +172,52 @@ footer {
     // }
   }
 
+  .onama-content-container {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+
+    .onama-description {
+      @media only screen and (max-width: 1024px) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .onama-cta {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        row-gap: 10rem;
+      }
+      @media only screen and (max-width: 480px) {
+        row-gap: 5rem;
+      }
+    }
+
+    .onama-team-container {
+      grid-row: 3 / 4;
+      grid-column: 1 / -1;
+      .onama-team-content {
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        grid-gap: 4rem;
+        justify-content: center;
+
+        @media only screen and (max-width: 1024px) {
+          grid-template-columns: max-content max-content;
+        }
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: max-content;
+        }
+      }
+    }
+  }
+
   .videoGallery-container {
     grid-column: 1 / -1;
     grid-row: 4 / 5;

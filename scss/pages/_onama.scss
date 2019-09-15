@@ -1,0 +1,209 @@
+.onama-content-container {
+  .onama-description {
+    padding: 50px 100px;
+    @media only screen and (max-width: 700px) {
+      padding: 100px 50px;
+    }
+    @media only screen and (max-width: 530px) {
+      padding: 100px 20px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 2rem;
+      color: $primary-color;
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 4rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $primary-color;
+      }
+    }
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .onama-cta {
+    background-color: $primary-color;
+    padding: 100px 100px;
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+
+    @media only screen and (max-width: 700px) {
+      padding: 100px 50px;
+    }
+    @media only screen and (max-width: 530px) {
+      padding: 100px 20px;
+    }
+
+    .onama-cta-item {
+      &-heading {
+        display: flex;
+        margin-bottom: 2.5rem;
+        align-content: center;
+        align-items: center;
+        color: white;
+        h2 {
+          font-size: 2rem;
+          font-weight: 300;
+        }
+        i {
+          font-size: 2.5rem;
+          margin-right: 2rem;
+          color: $secondary-color;
+        }
+      }
+      &-text {
+        padding: 0 4rem;
+        p {
+          font-size: 1.7rem;
+          color: white;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  .onama-team-container {
+    padding: 100px 100px;
+    @media only screen and (max-width: 1200px) {
+      padding: 100px 50px;
+    }
+    @media only screen and (max-width: 530px) {
+      padding: 100px 20px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 2rem;
+      color: $primary-color;
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 4rem;
+      text-align: center;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $primary-color;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .onama-team-content {
+      justify-items: center;
+      margin-top: 4rem;
+
+      .onama-team-content-card {
+        width: 300px;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-bottom: 2rem;
+
+        .team-card-background {
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 250px;
+          position: relative;
+          clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+          border-radius: 5px 5px 0px 0px;
+
+          &-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($primary-color, 0.3);
+            border-radius: 5px;
+          }
+        }
+        &:nth-child(1) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_1.jpg');
+        }
+        &:nth-child(2) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_2.jpg');
+        }
+        &:nth-child(3) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_3.jpg');
+        }
+        &:nth-child(4) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_5.jpg');
+        }
+        &:nth-child(5) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_4.jpg');
+        }
+        &:nth-child(6) .team-card-background {
+          background-image: url('../../img/auto_skola_wintera_instruktor_6.jpg');
+        }
+
+        .team-card-user {
+          position: absolute;
+          top: 35%;
+          width: 150px;
+          height: 150px;
+          border-radius: 100%;
+          background-size: cover;
+          background-position: center;
+        }
+
+        &:nth-child(1) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 1.jpg');
+        }
+        &:nth-child(2) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 2.jpg');
+        }
+        &:nth-child(3) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 3.jpg');
+        }
+        &:nth-child(4) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 4.jpg');
+        }
+        &:nth-child(5) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 5.jpg');
+        }
+        &:nth-child(6) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 10.jpg');
+        }
+
+        .team-card-description {
+          margin-top: 6rem;
+
+          h2 {
+            margin-bottom: 2rem;
+            &::after {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+          ul {
+            li {
+              margin-bottom: 0.5rem;
+              font-size: 1.2rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
