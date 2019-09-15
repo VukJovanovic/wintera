@@ -69,18 +69,14 @@
         padding: 0 2rem;
         color: $primary-color;
         background: white;
-        transition: all 0.35s;
+        transition: all 0.4s;
         p {
           font-size: 1.5rem;
-          margin-bottom: 1rem;
         }
 
         h3 {
           font-weight: 400;
           font-size: 1.8rem;
-          margin-top: 1.5rem;
-          margin-bottom: 1rem;
-          padding-bottom: 0.5rem;
           position: relative;
 
           &::after {
@@ -95,9 +91,7 @@
         }
         ul {
           list-style: circle;
-          padding: 0rem 2rem;
           li {
-            margin-bottom: 1rem;
             font-size: 1.5rem;
           }
         }
@@ -113,6 +107,22 @@
         ~ .category-item-content {
           max-height: 100vh;
           padding: 2rem;
+
+          p {
+            margin-bottom: 1rem;
+          }
+
+          h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          ul {
+            padding: 0rem 2rem;
+            li {
+              margin-bottom: 1rem;
+            }
+          }
         }
       }
     }
