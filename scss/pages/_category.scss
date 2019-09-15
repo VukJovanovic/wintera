@@ -1,11 +1,11 @@
 .category-container {
-  padding: 50px 100px;
+  padding: 100px 100px;
   justify-content: center;
   @media only screen and (max-width: 700px) {
-    padding: 50px 50px;
+    padding: 100px 50px;
   }
   @media only screen and (max-width: 530px) {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
   h2 {
     text-align: center;
@@ -96,6 +96,25 @@
             font-size: 1.5rem;
           }
         }
+        // .category-item-gallery {
+        //   .category-item-gallery-photo {
+        //     height: 300px;
+        //     background-position: center;
+        //     background-size: cover;
+        //     &:nth-child(1) {
+        //       background-image: url('../../img/auto-skola-pirot.jpg');
+        //     }
+        //     &:nth-child(2) {
+        //       background-image: url('../../img/auto-skola-pirot.jpg');
+        //     }
+        //     &:nth-child(3) {
+        //       background-image: url('../../img/auto-skola-pirot.jpg');
+        //     }
+        //     &:nth-child(4) {
+        //       background-image: url('../../img/auto-skola-pirot.jpg');
+        //     }
+        //   }
+        // }
       }
 
       input:checked {
@@ -108,7 +127,6 @@
         ~ .category-item-content {
           max-height: 100vh;
           padding: 2rem;
-
           p {
             margin-bottom: 1rem;
           }

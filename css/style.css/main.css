@@ -1026,14 +1026,14 @@ footer .footer-content {
       margin-bottom: 1rem; }
 
 .category-container {
-  padding: 50px 100px;
+  padding: 100px 100px;
   justify-content: center; }
   @media only screen and (max-width: 700px) {
     .category-container {
-      padding: 50px 50px; } }
+      padding: 100px 50px; } }
   @media only screen and (max-width: 530px) {
     .category-container {
-      padding: 50px 20px; } }
+      padding: 100px 20px; } }
   .category-container h2 {
     text-align: center;
     font-weight: 300;
