@@ -67,12 +67,35 @@
       .category-item-content {
         max-height: 0;
         overflow: hidden;
+        display: none;
         padding: 0 2rem;
         color: $primary-color;
         background: white;
         transition: all 0.4s;
         p {
           font-size: 1.5rem;
+        }
+        .category-item-gallery {
+          .category-gallery-item {
+            background-position: center;
+            border-radius: 5px;
+            background-size: cover;
+          }
+          #b-category-image {
+            background-image: url('../../img/Auto\ skola\ wintera\ pirot.jpg');
+          }
+          #a-category-image {
+            background-image: url('../../img/auto-skola-wintera-pirot-1.jpg');
+          }
+          #a2-category-image {
+            background-image: url('../../img/auto-skola-wintera-pirot-2.jpg');
+          }
+          #am-category-image {
+            background-image: url('../../img/auto-skola-wintera-pirot-3.jpg');
+          }
+          #a1-category-image {
+            background-image: url('../../img/auto-skola-wintera-pirot-4.jpg');
+          }
         }
 
         h3 {
@@ -96,25 +119,6 @@
             font-size: 1.5rem;
           }
         }
-        // .category-item-gallery {
-        //   .category-item-gallery-photo {
-        //     height: 300px;
-        //     background-position: center;
-        //     background-size: cover;
-        //     &:nth-child(1) {
-        //       background-image: url('../../img/auto-skola-pirot.jpg');
-        //     }
-        //     &:nth-child(2) {
-        //       background-image: url('../../img/auto-skola-pirot.jpg');
-        //     }
-        //     &:nth-child(3) {
-        //       background-image: url('../../img/auto-skola-pirot.jpg');
-        //     }
-        //     &:nth-child(4) {
-        //       background-image: url('../../img/auto-skola-pirot.jpg');
-        //     }
-        //   }
-        // }
       }
 
       input:checked {
@@ -125,14 +129,15 @@
           }
         }
         ~ .category-item-content {
-          max-height: 100vh;
+          max-height: 100%;
+          display: block;
           padding: 2rem;
           p {
             margin-bottom: 1rem;
           }
 
           h3 {
-            margin-top: 1.5rem;
+            margin-top: 3rem;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
           }
@@ -140,6 +145,12 @@
             padding: 0rem 2rem;
             li {
               margin-bottom: 1rem;
+            }
+          }
+          .category-item-gallery {
+            padding-bottom: 2rem;
+            .category-gallery-item {
+              height: 300px;
             }
           }
         }

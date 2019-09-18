@@ -155,6 +155,15 @@
         &:nth-child(6) .team-card-background {
           background-image: url('../../img/auto_skola_wintera_instruktor_6.jpg');
         }
+        &:nth-child(7) .team-card-background {
+          background-image: url('../../img/auto-skola-pirot.jpg');
+        }
+        &:nth-child(8) .team-card-background {
+          background-image: url('../../img/auto-skola-wintera-predavac.jpg');
+        }
+        &:nth-child(9) .team-card-background {
+          background-image: url('../../img/auto-skola-wintera-administrator.jpg');
+        }
 
         .team-card-user {
           position: absolute;
@@ -183,6 +192,15 @@
         }
         &:nth-child(6) .team-card-user {
           background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 10.jpg');
+        }
+        &:nth-child(7) .team-card-user {
+          background-image: url('../../img/auto-skola-wintera-tim-11.jpg');
+        }
+        &:nth-child(8) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 7.jpg');
+        }
+        &:nth-child(9) .team-card-user {
+          background-image: url('../../img/Auto\ Skola\ Wintera\ Tim\ 6.jpg');
         }
 
         .team-card-description {

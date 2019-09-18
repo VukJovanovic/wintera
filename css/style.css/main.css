@@ -302,7 +302,7 @@ footer .footer-content {
   .main-carousel .img-1 {
     background-image: url("../../img/Auto Skola Wintera B Kategorija.jpg"); }
   .main-carousel .img-2 {
-    background-image: url("../../img/Auto skola wintera pirot.jpg"); }
+    background-image: url("../../img/auto_skola_wintera_vozila.jpg"); }
   .main-carousel .img-3 {
     background-image: url("../../img/Auto skola wintera polaganje za vozacku dozvolu.jpg"); }
   .main-carousel .owl-dots {
@@ -392,7 +392,7 @@ footer .footer-content {
     .header-navigation {
       padding: 10px 20px; } }
   .header-navigation .logo img {
-    width: 150px;
+    width: 170px;
     height: 40px; }
   .header-navigation nav {
     justify-self: right;
@@ -716,7 +716,7 @@ footer .footer-content {
       top: 15vh;
       right: 2rem;
       border: 1px solid #f9fd50;
-      background-image: url("../../img/Auto skola wintera pirot.jpg"); }
+      background-image: url("../../img/auto-skola-wintera-ceo-tim.jpg"); }
       @media only screen and (max-width: 1024px) {
         .aboutUs-content .aboutUs-photo-2 {
           top: 2rem;
@@ -1145,12 +1145,27 @@ footer .footer-content {
       .category-container .category-content .category-item .category-item-content {
         max-height: 0;
         overflow: hidden;
+        display: none;
         padding: 0 2rem;
         color: #002d40;
         background: white;
         transition: all 0.4s; }
         .category-container .category-content .category-item .category-item-content p {
           font-size: 1.5rem; }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery .category-gallery-item {
+          background-position: center;
+          border-radius: 5px;
+          background-size: cover; }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery #b-category-image {
+          background-image: url("../../img/Auto skola wintera pirot.jpg"); }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery #a-category-image {
+          background-image: url("../../img/auto-skola-wintera-pirot-1.jpg"); }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery #a2-category-image {
+          background-image: url("../../img/auto-skola-wintera-pirot-2.jpg"); }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery #am-category-image {
+          background-image: url("../../img/auto-skola-wintera-pirot-3.jpg"); }
+        .category-container .category-content .category-item .category-item-content .category-item-gallery #a1-category-image {
+          background-image: url("../../img/auto-skola-wintera-pirot-4.jpg"); }
         .category-container .category-content .category-item .category-item-content h3 {
           font-weight: 400;
           font-size: 1.8rem;
@@ -1172,18 +1187,23 @@ footer .footer-content {
         .category-container .category-content .category-item input:checked + label::after {
           transform: rotate(90deg); }
       .category-container .category-content .category-item input:checked ~ .category-item-content {
-        max-height: 100vh;
+        max-height: 100%;
+        display: block;
         padding: 2rem; }
         .category-container .category-content .category-item input:checked ~ .category-item-content p {
           margin-bottom: 1rem; }
         .category-container .category-content .category-item input:checked ~ .category-item-content h3 {
-          margin-top: 1.5rem;
+          margin-top: 3rem;
           margin-bottom: 1rem;
           padding-bottom: 0.5rem; }
         .category-container .category-content .category-item input:checked ~ .category-item-content ul {
           padding: 0rem 2rem; }
           .category-container .category-content .category-item input:checked ~ .category-item-content ul li {
             margin-bottom: 1rem; }
+        .category-container .category-content .category-item input:checked ~ .category-item-content .category-item-gallery {
+          padding-bottom: 2rem; }
+          .category-container .category-content .category-item input:checked ~ .category-item-content .category-item-gallery .category-gallery-item {
+            height: 300px; }
 
 .onama-content-container .onama-description {
   padding: 50px 100px; }
@@ -1311,6 +1331,12 @@ footer .footer-content {
         background-image: url("../../img/auto_skola_wintera_instruktor_4.jpg"); }
       .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(6) .team-card-background {
         background-image: url("../../img/auto_skola_wintera_instruktor_6.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(7) .team-card-background {
+        background-image: url("../../img/auto-skola-pirot.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(8) .team-card-background {
+        background-image: url("../../img/auto-skola-wintera-predavac.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(9) .team-card-background {
+        background-image: url("../../img/auto-skola-wintera-administrator.jpg"); }
       .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card .team-card-user {
         position: absolute;
         top: 35%;
@@ -1331,6 +1357,12 @@ footer .footer-content {
         background-image: url("../../img/Auto Skola Wintera Tim 5.jpg"); }
       .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(6) .team-card-user {
         background-image: url("../../img/Auto Skola Wintera Tim 10.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(7) .team-card-user {
+        background-image: url("../../img/auto-skola-wintera-tim-11.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(8) .team-card-user {
+        background-image: url("../../img/Auto Skola Wintera Tim 7.jpg"); }
+      .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card:nth-child(9) .team-card-user {
+        background-image: url("../../img/Auto Skola Wintera Tim 6.jpg"); }
       .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card .team-card-description {
         margin-top: 6rem; }
         .onama-content-container .onama-team-container .onama-team-content .onama-team-content-card .team-card-description h2 {
@@ -1357,7 +1389,8 @@ footer {
     align-items: center; }
     footer .company-details .footer-logo img {
       width: 150px;
-      height: 60px; }
+      height: 60px;
+      margin-bottom: 2rem; }
     footer .company-details p {
       color: white;
       font-size: 1.2rem;
