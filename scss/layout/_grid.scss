@@ -98,6 +98,61 @@
   grid-template-columns: 1fr;
 }
 
+.text-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  .wintera-nudi {
+    grid-column: 1 / 2;
+    @media only screen and (max-width: 1024px) {
+      grid-column: 1 / -1;
+    }
+  }
+  .teorijska-obuka {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    .teorijska-obuka-text {
+      grid-column: 2 / 3;
+      @media only screen and (max-width: 1024px) {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+  .prakticna-obuka {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    @media only screen and (max-width: 1024px) {
+      grid-column: 1 / -1;
+    }
+  }
+  .praktican-ispit {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    @media only screen and (max-width: 1024px) {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+    }
+  }
+  .dopunski-casovi {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    @media only screen and (max-width: 1024px) {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
+  }
+}
+
 footer {
   .footer-content {
     display: grid;

@@ -95,6 +95,51 @@ ul {
   display: grid;
   grid-template-columns: 1fr; }
 
+.text-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 1024px) {
+    .text-section {
+      grid-template-columns: 1fr; } }
+  .text-section .wintera-nudi {
+    grid-column: 1 / 2; }
+    @media only screen and (max-width: 1024px) {
+      .text-section .wintera-nudi {
+        grid-column: 1 / -1; } }
+  .text-section .teorijska-obuka {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    @media only screen and (max-width: 1024px) {
+      .text-section .teorijska-obuka {
+        grid-template-columns: 1fr; } }
+    .text-section .teorijska-obuka .teorijska-obuka-text {
+      grid-column: 2 / 3; }
+      @media only screen and (max-width: 1024px) {
+        .text-section .teorijska-obuka .teorijska-obuka-text {
+          grid-column: 1 / -1; } }
+  .text-section .prakticna-obuka {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+    @media only screen and (max-width: 1024px) {
+      .text-section .prakticna-obuka {
+        grid-column: 1 / -1; } }
+  .text-section .praktican-ispit {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; }
+    @media only screen and (max-width: 1024px) {
+      .text-section .praktican-ispit {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5; } }
+  .text-section .dopunski-casovi {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5; }
+    @media only screen and (max-width: 1024px) {
+      .text-section .dopunski-casovi {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6; } }
+
 footer .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -706,6 +751,105 @@ footer .footer-content {
     line-height: 2.7rem; }
     .aboutUs-content .aboutUs-description .aboutUs-text:last-child {
       margin-bottom: 0; }
+
+.text-section .wintera-nudi,
+.text-section .teorijska-obuka,
+.text-section .prakticna-obuka,
+.text-section .praktican-ispit,
+.text-section .dopunski-casovi {
+  padding: 100px 100px; }
+  @media only screen and (max-width: 1024px) {
+    .text-section .wintera-nudi,
+    .text-section .teorijska-obuka,
+    .text-section .prakticna-obuka,
+    .text-section .praktican-ispit,
+    .text-section .dopunski-casovi {
+      padding: 100px 50px; } }
+  @media only screen and (max-width: 1024px) {
+    .text-section .wintera-nudi,
+    .text-section .teorijska-obuka,
+    .text-section .prakticna-obuka,
+    .text-section .praktican-ispit,
+    .text-section .dopunski-casovi {
+      padding: 80px 20px; } }
+
+.text-section .wintera-nudi ul,
+.text-section .praktican-ispit ul,
+.text-section .dopunski-casovi ul {
+  list-style: circle;
+  padding-left: 3rem;
+  margin-bottom: 4rem; }
+  .text-section .wintera-nudi ul li,
+  .text-section .praktican-ispit ul li,
+  .text-section .dopunski-casovi ul li {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #002d40;
+    margin-bottom: 1.5rem; }
+
+.text-section .wintera-nudi h2,
+.text-section .teorijska-obuka h2,
+.text-section .prakticna-obuka h2,
+.text-section .praktican-ispit h2,
+.text-section .dopunski-casovi h2 {
+  color: #002d40;
+  font-weight: 300;
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem; }
+  .text-section .wintera-nudi h2::after,
+  .text-section .teorijska-obuka h2::after,
+  .text-section .prakticna-obuka h2::after,
+  .text-section .praktican-ispit h2::after,
+  .text-section .dopunski-casovi h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #f9fd50; }
+
+.text-section .teorijska-obuka {
+  background-color: #002d40;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%); }
+  .text-section .teorijska-obuka h2 {
+    color: white; }
+  .text-section .teorijska-obuka .teorijska-obuka-text p {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 2rem; }
+
+@media only screen and (max-width: 1024px) {
+  .text-section .prakticna-obuka {
+    padding-bottom: 0; } }
+
+.text-section .prakticna-obuka p,
+.text-section .praktican-ispit p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 2rem; }
+
+.text-section .dopunski-casovi {
+  padding-top: 0; }
+
+.map-location {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 2rem; }
+  .map-location iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .gallery-container {
   padding: 50px 100px;

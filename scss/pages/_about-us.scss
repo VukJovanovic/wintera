@@ -105,3 +105,110 @@
     // Plan styles
   }
 }
+
+.text-section {
+  .wintera-nudi,
+  .teorijska-obuka,
+  .prakticna-obuka,
+  .praktican-ispit,
+  .dopunski-casovi {
+    padding: 100px 100px;
+    @media only screen and (max-width: 1024px) {
+      padding: 100px 50px;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 80px 20px;
+    }
+  }
+  .wintera-nudi,
+  .praktican-ispit,
+  .dopunski-casovi {
+    ul {
+      list-style: circle;
+      padding-left: 3rem;
+      margin-bottom: 4rem;
+      li {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .wintera-nudi,
+  .teorijska-obuka,
+  .prakticna-obuka,
+  .praktican-ispit,
+  .dopunski-casovi {
+    h2 {
+      color: $primary-color;
+      font-weight: 300;
+      font-size: 2.5rem;
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 4rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 1px;
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .teorijska-obuka {
+    background-color: $primary-color;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    h2 {
+      color: white;
+    }
+    .teorijska-obuka-text {
+      p {
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 300;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .prakticna-obuka {
+    @media only screen and (max-width: 1024px) {
+      padding-bottom: 0;
+    }
+  }
+  .prakticna-obuka,
+  .praktican-ispit {
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .dopunski-casovi {
+    padding-top: 0;
+  }
+}
+
+.map-location {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 2rem;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
