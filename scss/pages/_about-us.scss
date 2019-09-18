@@ -193,7 +193,15 @@
     }
   }
   .dopunski-casovi {
-    padding-top: 0;
+    background-color: $primary-color;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    .dopunski-casovi-text {
+      h2,
+      li {
+        color: white;
+      }
+    }
   }
 }
 
