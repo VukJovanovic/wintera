@@ -1,3 +1,8 @@
+#straight-footer {
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+}
+
 footer {
   background-color: $primary-color;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);

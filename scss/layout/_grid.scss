@@ -112,51 +112,19 @@
       grid-column: 1 / -1;
     }
   }
-  .teorijska-obuka {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media only screen and (max-width: 1024px) {
-      grid-template-columns: 1fr;
-    }
-    .teorijska-obuka-text {
-      grid-column: 2 / 3;
-      @media only screen and (max-width: 1024px) {
-        grid-column: 1 / -1;
-      }
-    }
-  }
-  .prakticna-obuka {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    @media only screen and (max-width: 1024px) {
-      grid-column: 1 / -1;
-    }
-  }
-  .praktican-ispit {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    @media only screen and (max-width: 1024px) {
-      grid-column: 1 / -1;
-      grid-row: 4 / 5;
-    }
-  }
-  .dopunski-casovi {
+  .pocetna-cta {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .dopunski-casovi-text {
-      grid-column: 1 / 2;
-      @media only screen and (max-width: 1024px) {
-        grid-column: 1 / -1;
-      }
-    }
-
+    justify-items: center;
     @media only screen and (max-width: 1024px) {
-      grid-row: 5 / 6;
+      grid-template-columns: 1fr;
     }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    grid-row: 5 / 6;
   }
 }
 
@@ -200,6 +168,40 @@ footer {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    }
+  }
+
+  .obuka-text-container {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    .teorijska-obuka-text {
+      grid-column: 1 / 2;
+      @media only screen and (max-width: 1024px) {
+        grid-column: 1 / -1;
+      }
+    }
+    .prakticna-obuka-text {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
+      .prakticna-obuka-text-content {
+        grid-column: 2 / -1;
+        @media only screen and (max-width: 1024px) {
+          grid-column: 1 / -1;
+        }
+      }
+    }
+    .dopunski-casovi {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
     }
   }
 
@@ -264,11 +266,17 @@ footer {
     .onama-team-container {
       grid-row: 3 / 4;
       grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr;
       .onama-team-content {
         display: grid;
         grid-template-columns: max-content max-content max-content;
         grid-gap: 4rem;
         justify-content: center;
+
+        .onama-team-photo {
+          grid-column: 1 / -1;
+        }
 
         @media only screen and (max-width: 1024px) {
           grid-template-columns: max-content max-content;

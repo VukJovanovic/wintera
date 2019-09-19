@@ -76,7 +76,7 @@
     .aboutUs-heading {
       color: white;
       font-weight: 300;
-      font-size: 2.5rem;
+      font-size: 2rem;
       position: relative;
       padding-bottom: 1rem;
       margin-bottom: 4rem;
@@ -93,7 +93,7 @@
     }
     .aboutUs-text {
       color: white;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
       line-height: 2.7rem;
 
@@ -108,10 +108,7 @@
 
 .text-section {
   .wintera-nudi,
-  .teorijska-obuka,
-  .prakticna-obuka,
-  .praktican-ispit,
-  .dopunski-casovi {
+  .pocetna-cta {
     padding: 100px 100px;
     @media only screen and (max-width: 1024px) {
       padding: 100px 50px;
@@ -120,15 +117,13 @@
       padding: 80px 20px;
     }
   }
-  .wintera-nudi,
-  .praktican-ispit,
-  .dopunski-casovi {
+  .wintera-nudi {
     ul {
       list-style: circle;
       padding-left: 3rem;
       margin-bottom: 4rem;
       li {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 300;
         color: $primary-color;
         margin-bottom: 1.5rem;
@@ -137,14 +132,11 @@
   }
 
   .wintera-nudi,
-  .teorijska-obuka,
-  .prakticna-obuka,
-  .praktican-ispit,
-  .dopunski-casovi {
+  .pocetna-cta {
     h2 {
       color: $primary-color;
       font-weight: 300;
-      font-size: 2.5rem;
+      font-size: 2rem;
       position: relative;
       padding-bottom: 1rem;
       margin-bottom: 4rem;
@@ -161,45 +153,54 @@
     }
   }
 
-  .teorijska-obuka {
-    background-color: $primary-color;
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    h2 {
-      color: white;
-    }
-    .teorijska-obuka-text {
-      p {
-        font-size: 1.6rem;
-        color: white;
-        font-weight: 300;
-        line-height: 2.5rem;
-        margin-bottom: 2rem;
-      }
-    }
-  }
-  .prakticna-obuka {
-    @media only screen and (max-width: 1024px) {
-      padding-bottom: 0;
-    }
-  }
-  .prakticna-obuka,
-  .praktican-ispit {
-    p {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 2.5rem;
-      margin-bottom: 2rem;
-    }
-  }
-  .dopunski-casovi {
+  .pocetna-cta {
     background-color: $primary-color;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-    .dopunski-casovi-text {
-      h2,
-      li {
+
+    .cenovnik-cta,
+    .kontakt-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem;
+      box-shadow: $dark-box-shadow;
+      width: 400px;
+      text-align: center;
+      justify-items: center;
+
+      @media only screen and (max-width: 1024px) {
+        margin-bottom: 4rem;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 250px;
+      }
+      h3 {
         color: white;
+        font-weight: 300;
+        font-size: 1.9rem;
+      }
+      p {
+        color: white;
+        font-weight: 300;
+        margin: 2rem 0 3rem 0;
+        font-size: 1.4rem;
+      }
+      a {
+        color: $primary-color;
+        display: block;
+        font-size: 1.6rem;
+        text-align: center;
+        width: 200px;
+        cursor: pointer;
+        background-color: $secondary-color;
+        padding: 1.5rem;
+        border-radius: 5px;
+        transition: transform 0.4s;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
       }
     }
   }

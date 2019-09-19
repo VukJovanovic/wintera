@@ -101,6 +101,28 @@
         transform: translateX(-50%);
       }
     }
+    .onama-team-photo {
+      height: 500px;
+      background-image: url('../../img/auto-skola-wintera-nas-tim.jpg');
+      background-position: top;
+      background-size: cover;
+      position: relative;
+      border-radius: 5px;
+      box-shadow: $box-shadow;
+
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+
+      &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($primary-color, 0.3);
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     .onama-team-content {
       justify-items: center;
