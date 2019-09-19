@@ -97,14 +97,14 @@
     opacity: 0;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     border-top: 1px solid $secondary-color;
     padding-top: 20px;
     justify-self: flex-end;
     &-link {
       margin-right: 15px;
       i {
-        font-size: 4rem;
+        font-size: 3rem;
         color: $secondary-color;
       }
     }

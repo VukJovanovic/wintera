@@ -562,14 +562,14 @@ footer .footer-content {
     opacity: 0;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     border-top: 1px solid #f9fd50;
     padding-top: 20px;
     justify-self: flex-end; }
     .sideBar-navigation .social-links-link {
       margin-right: 15px; }
       .sideBar-navigation .social-links-link i {
-        font-size: 4rem;
+        font-size: 3rem;
         color: #f9fd50; }
 
 .sideBar-overlay {
@@ -824,7 +824,8 @@ footer .footer-content {
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
     width: 400px;
     text-align: center;
-    justify-items: center; }
+    justify-items: center;
+    justify-content: center; }
     @media only screen and (max-width: 1024px) {
       .text-section .pocetna-cta .cenovnik-cta,
       .text-section .pocetna-cta .kontakt-cta {
@@ -1236,7 +1237,7 @@ footer .footer-content {
     .obuka-text-container .teorijska-obuka-text,
     .obuka-text-container .prakticna-obuka-text,
     .obuka-text-container .dopunski-casovi-text {
-      padding: 80px 20px; } }
+      padding: 100px 20px; } }
   .obuka-text-container .teorijska-obuka-text h2,
   .obuka-text-container .prakticna-obuka-text h2,
   .obuka-text-container .dopunski-casovi-text h2 {
