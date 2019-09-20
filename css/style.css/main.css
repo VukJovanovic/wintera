@@ -153,6 +153,18 @@ footer .footer-content {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 400px)); }
+  .template-page-content .contact-info {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 4 / 5; }
+    @media only screen and (max-width: 1024px) {
+      .template-page-content .contact-info {
+        grid-template-columns: 1fr;
+        justify-items: center; } }
+  .template-page-content .map-location {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6; }
   .template-page-content .obuka-text-container {
     display: grid;
     grid-column: 1 / -1;
@@ -1497,6 +1509,54 @@ footer .footer-content {
           margin-bottom: 0.5rem;
           font-size: 1.2rem;
           text-align: center; }
+
+.contact-info {
+  padding: 100px 100px; }
+  @media only screen and (max-width: 1024px) {
+    .contact-info {
+      padding: 100px 50px; } }
+  @media only screen and (max-width: 480px) {
+    .contact-info {
+      padding: 80px 20px; } }
+  .contact-info h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #002d40;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+    .contact-info h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #f9fd50; }
+  .contact-info ul li {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #002d40;
+    margin-bottom: 1.5rem; }
+    .contact-info ul li i {
+      font-size: 1.8rem;
+      color: #002d40;
+      margin-right: 1rem; }
+  .contact-info ul .mb-lg {
+    margin-bottom: 4rem; }
+  @media only screen and (max-width: 1024px) {
+    .contact-info .contact-info-social {
+      margin-top: 4rem; } }
+  .contact-info .contact-info-social .contact-socialLinks {
+    display: flex; }
+    @media only screen and (max-width: 1024px) {
+      .contact-info .contact-info-social .contact-socialLinks {
+        justify-content: center; } }
+    .contact-info .contact-info-social .contact-socialLinks a {
+      margin-right: 1rem; }
+      .contact-info .contact-info-social .contact-socialLinks a i {
+        font-size: 3rem;
+        color: #002d40; }
 
 #straight-footer {
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
